@@ -1,3 +1,5 @@
+@use "../foundation/color" as *;
+
 $layout-width-inner: 1080px;
 
 // ブレイクポイント
@@ -20,4 +22,23 @@ $breakpoints: (
     // width: 1200px;
     // max-width: 100%;
     // margin: 0 auto;
+}
+
+.btn {
+    display: grid;
+    place-items: center;
+    background-color: $accent-color;
+    border-radius: 8px;
+    box-shadow: 2px 4px 4px rgba($pureBlack, .5);
+    transition: all .3s ease 0s;
+
+    &:hover {
+        transform: translate(2px 4px);
+        box-shadow: none;
+    }
+
+    &__text {
+        color: $pureBlack;
+        font-weight: 500;
+    }
 }

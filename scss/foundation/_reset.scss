@@ -1,3 +1,6 @@
+@use "./color" as *;
+@use "./variables" as *;
+
 *,
 *::before,
 *::after {
@@ -11,10 +14,10 @@ body {
 }
 
 body {
-    font-family:  "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family:  $NSJP;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #fff;
+    background-color: $pureWhite;
 }
 
 img {

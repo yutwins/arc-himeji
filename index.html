@@ -14,7 +14,7 @@
 
     <!-- ②SEO対策の補助的措置 -->
     <!-- サイトのタイトル -->
-    <title></title>
+    <title>アーク行政書士</title>
     <!-- キーワード -->
     <meta name="keywords" content="">
     <!-- サイトの説明 -->
@@ -37,12 +37,94 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <!-- faviconの指定 -->
     <link rel="shortcut icon" href="./favicon.ico">
-    <!-- 外部のCSSファイル -->
-    <link rel="stylesheet" href="scss/style.scss">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- 外部のCSSファイル -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- /.header -->
+    
+    <div id="global-container">
+        <div id="container">
+            <div class="mobile-menu__cover"></div>
+            <header class="header">
+                <div class="header-inner">
+                    <div class="header-left">
+                        <a href="#" class="header-logo">
+                            <img src="./images/arc-header-logo.png" alt="ロゴ" class="header-logo__icon">
+                            <p class="header-logo__text">アーク行政書士</p>
+                        </a>
+                        <ul class="header-ul">
+                            <li class="header-li">
+                                <a href="" class="header-li__item">ご相談の流れ</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="" class="header-li__item">サービス</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="" class="header-li__item">ブログ</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="" class="header-li__item">よくあるご質問</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-textArea">
+                            <div class="header-tel">
+                                <img src="./images/arc-tel-icon.png" alt="電話アイコン" class="header-tel__icon">
+                                <a href="tel:090-4288-9385" class="header-tel__num">090-4288-9385</a>
+                            </div>
+                            <p class="header-businessHour">受付時間：全日 9:00～18:00<br>土日祝・夜間対応可能</p>
+                        </div>
+                        <div class="header-contact">
+                            <img src="./images/arc-icon-mail.png" alt="メールアイコン" class="header-contact__icon">
+                            <a href="#" class="btn header-contact__btn"><span class="btn__text header-contact__btnText">お問い合わせ</span></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="mobile-menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </header>
+        </div>
+        <nav class="mobile-menu">
+            <ul class="mobile-menu__main">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">
+                        <span class="main-title">ご相談の流れ</span>
+                        <!-- <span class="sub-title">サービスについて</span> -->
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">
+                        <span class="main-title">サービス</span>
+                        <!-- <span class="sub-title">私たちについて</span> -->
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">
+                        <span class="main-title">ブログ</span>
+                        <!-- <span class="sub-title">コンタクト方法</span> -->
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">
+                        <span class="main-title">よくあるご質問</span>
+                        <!-- <span class="sub-title">コンタクト方法</span> -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
 
     <script src="./js/main.js"></script>
 </body>
