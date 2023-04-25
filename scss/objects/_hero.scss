@@ -1,0 +1,122 @@
+@use "../foundation/global" as *;
+
+.hero {
+    width: 100%;
+    height: 520px;
+    margin-top: 100px;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../../images/arc-hero-img.png) no-repeat center center / cover;
+    }
+    
+    @include mq("sp") {
+        margin-top: 70px;
+        
+        &::before {
+            background: url(../../images/arc-hero-img-sp.png) no-repeat center center / cover;
+        }
+    }
+
+    &-inner {
+        padding: 0 7%;
+
+        @include mq("sp") {
+            padding: 220px 5% 0 5%;
+        }
+    }
+
+    &-textArea {
+        position: relative;
+        z-index: 2;
+        padding-top: 80px;
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: 900;
+        color: $primary-color;
+
+        @include mq("sp") {
+            font-size: 22px;
+            text-align: center;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 76px;
+        font-size: 24px;
+        line-height: 2em;
+        font-weight: bold;
+
+        @include mq("sp") {
+            margin-top: 28px;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    &-scrollDown {
+        width: 40px;
+        height: 140px;
+        background-color: $primary-color;
+        position:absolute;
+        bottom: 0;
+        right: 10%;
+        /*矢印の動き1秒かけて永遠にループ*/
+        @include animation(
+          $name: arrowmove,
+          $duration: 1s,
+            $timing-function: ease-in-out,
+            $iteration-count: infinite
+        );
+
+        @include mq("sp") {
+            display: none;
+        }
+
+        &::before,
+        &::after {
+            content:"";
+            position: absolute;
+            bottom: 10px;
+            width:1px;
+            background-color: $offWhite;
+        }
+        &::before {
+            right: 14px;
+            height: 20px;
+            transform: skewX(-31deg);
+        }
+        &::after {
+            right: 20px;
+            height: 70px;
+        }
+
+        & > span {
+            position: absolute;
+            left: 50%;
+            top: 15px;
+            transform: translateX(-50%);
+            color: $offWhite;
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+            /*縦書き設定*/
+            writing-mode: vertical-rl;
+        }
+    }
+
+    @keyframes arrowmove{
+          0%{bottom:-5%;}
+          50%{bottom: -2%;}
+         100%{bottom:-5%;}
+     }
+}
+

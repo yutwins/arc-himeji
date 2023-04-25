@@ -165,8 +165,6 @@
 #container {
     position: relative;
     background-color: $pureWhite;
-    height: 100vh;
-    z-index: 2;
     transition: all 0.5s;
 }
 
@@ -176,6 +174,7 @@
     position: fixed;
     top: 60px;
     right: 0;
+    z-index: -1;
 
     &__cover {
         position: absolute;
@@ -233,7 +232,7 @@
         transform: translate3d(0, 0, -1000px);
         padding: 0 40px;
         transition: transform .3s, opacity .2s;
-        // opacity: 0;
+        opacity: 0;
     }
 
     &__link {
@@ -248,6 +247,8 @@
 .menu-open {
 
     & #container {
+        z-index: 2;
+        height: 100vh;
         transform: translate(-300px, 60px);
         box-shadow: 0 8px 40px -10px rgba($cMenuClose, .8);
     }
