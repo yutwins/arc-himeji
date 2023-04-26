@@ -36,12 +36,19 @@
         }
     }
 
-    &__name {
+    &__post {
         font-size: 18px;
         font-weight: bold;
-        margin-top: 6px;
+        color: $gray-post;
+    }
+    &__name {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: bold;
+        margin-top: 2px;
     }
     &__furigana {
+        margin-top: 6px;
         font-weight: 500;
         font-size: 12px;
     }
@@ -100,6 +107,14 @@
     &__text {
         font-size: 18px;
         font-weight: 500;
+
+        &:not(:first-child) {
+            margin-top: 10px;
+
+            @include mq("sp") {
+                margin-top: 6px;
+            }
+        }
 
         @include mq("sp") {
             font-size: 14px;
