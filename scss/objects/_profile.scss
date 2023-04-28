@@ -3,7 +3,7 @@
 .profile {
     
     &-inner {
-        padding: 120px 0;
+        padding: 190px 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -78,6 +78,9 @@
         font-size: 36px;
         line-height: 1.5;
 
+        @include mq("tab") {
+            font-size: 32px;
+        }
         @include mq("sp") {
             font-size: 20px;
             text-align: center;
@@ -89,6 +92,9 @@
         font-size: 20px;
         color: $primary-color;
 
+        @include mq("tab") {
+            font-size: 18px;
+        }
         @include mq("sp") {
             font-size: 16px;
             text-align: center;
@@ -115,7 +121,10 @@
                 margin-top: 6px;
             }
         }
-
+        
+        @include mq("tab") {
+            font-size: 16px;
+        }
         @include mq("sp") {
             font-size: 14px;
         }

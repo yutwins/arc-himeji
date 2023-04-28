@@ -78,11 +78,33 @@
 
         &__head {
             font-size: 24px;
+            line-height: 40px;
             font-weight: bold;
             color: $pureWhite;
 
             @include mq("sp") {
                 font-size: 18px;
+                line-height: 2;
+            }
+
+            .yuigon-furigana {
+                position: relative;
+
+                &::before {
+                    content: "カタチ";
+                    position: absolute;
+                    top: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 12px;
+                    font-weight: 500;
+                    white-space: nowrap;
+
+                    @include mq("sp") {
+                        top: -12px;
+                        font-size: 10px;
+                    }
+                }
             }
         }
 
