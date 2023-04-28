@@ -8,12 +8,13 @@
 
     &__title {
         color: $secondary-color;
-        white-space: nowrap;
+        // white-space: nowrap;
+
+        @include mq("sp") {
+            font-size: 1.8rem;
+        }
     }
 
-    &-upper {
-        
-    }
 
     &-upperItems {
         display: flex;
@@ -143,7 +144,8 @@
 
             @include mq("sp") {
                 font-size: 22px;
-                white-space: nowrap;
+                font-size: 1.2rem;
+                // white-space: nowrap;
             }
         }
 
@@ -163,6 +165,11 @@
         &__iconArea {
             margin: 0;
             max-width: 100%;
+
+            @include mq("sp") {
+                display: grid;
+                place-items: center;
+            }
         }
         &__icon {
             width: 335px;

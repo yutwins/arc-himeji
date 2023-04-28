@@ -1,8 +1,10 @@
+//モバイルメニュー
 class MobileMenu{
     constructor(){
     this.DOM={};
     this.DOM.btn=document.querySelector('.mobile-menu__btn');
     this.DOM.cover = document.querySelector(".mobile-menu__cover");
+    this.DOM.links = document.querySelectorAll(".mobile-menu__link");
     this.DOM.container=document.querySelector('#global-container');
     this.eventType = this._getEventType();
     this._addEvent();
@@ -19,6 +21,9 @@ class MobileMenu{
   }
   _addEvent() {
     this.DOM.btn.addEventListener('click',this._toggle.bind(this));
+    this.DOM.links.forEach((link) => {
+      link.addEventListener(this.eventType, this._toggle.bind(this));
+    });
     this.DOM.cover.addEventListener('click',this._toggle.bind(this));
   }
 }
