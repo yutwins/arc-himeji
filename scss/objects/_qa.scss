@@ -1,0 +1,121 @@
+@use "../foundation/global" as *;
+
+.qa {
+
+    &-inner {
+        padding: 120px 0;
+
+        @include mq("sp") {
+            padding: 60px 0;
+        }
+    }
+
+    &__title {
+
+    }
+
+    &-wrapper {
+        margin-top: 64px;
+
+        @include mq("sp") {
+            margin-top: 32px;
+        }
+    }
+
+    &-wrap {
+
+        &:not(:first-child) {
+            margin-top: 60px;
+
+            @include mq("sp") {
+                margin-top: 32px;
+            }
+        }
+
+        &__title {
+            font-size: 24px;
+            font-weight: bold;
+
+            @include mq("sp") {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &-items {
+        margin-top: 16px;
+
+        @include mq("sp") {
+            margin-top: 12px;
+        }
+    }
+
+    &-item {
+        height: auto;
+        max-height: 50px;
+        overflow: hidden;
+        transition: all 0.3s ease 0s;
+
+        @include mq("sp") {
+            max-height: 85px;
+        }
+
+        &.open {
+            max-height: 1000px;
+
+            .qa-item__a {
+                transform: translateY(0);
+            }
+        }
+
+        &:not(:first-child) {
+            margin-top: 24px;
+
+            @include mq("sp") {
+                margin-top: 0;
+            }
+        }
+
+        &__q,
+        &__a {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 6px 12px;
+            height: auto;
+        }
+        &__q {
+            background-color: $medium-green;
+            color: $pureWhite;
+            position: relative;
+            z-index: 2;
+        }
+        &__qHead,
+        &__aHead {
+            font-size: 24px;
+            line-height: 1;
+        }
+        &__qHead {
+        }
+        &__qText,
+        &__aText {
+            font-weight: bold;
+
+            @include mq("sp") {
+                font-size: 14px;
+            }
+        }
+
+        &__a {
+            margin-top: 10px;
+            transform: translateY(-110%);
+            transition: all 0.3s ease 0s;
+        }
+        &__aHead {
+            color: $golden;
+        }
+        &__aText {
+            font-weight: bold;
+        }
+    }
+}
