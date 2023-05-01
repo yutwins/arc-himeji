@@ -1,0 +1,176 @@
+@use "../foundation/global" as *;
+
+.flow {
+    background-color: $primary-color;
+
+    &-inner {
+        padding: 120px 0;
+
+        @include mq("sp") {
+            padding: 60px 0;
+        }
+    }
+
+    &__title {
+        color: $pureWhite
+    }
+
+    &-ol {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 64px 5%;
+        margin-top: 64px;
+
+        @include mq("sp") {
+            display: block;
+            max-width: 350px;
+            margin: 40px auto 0;
+        }
+    }
+
+    &-list {
+        width: 29%;
+        height: auto;
+        min-height: 380px;
+        padding: 20px 16px;
+        background-color: $pureWhite;
+        position: relative;
+
+        @include mq("sp") {
+            width: 100%;
+            min-height: initial;
+            padding: 16px 12px;    
+        }
+
+        &:not(:nth-last-of-type(1)) {
+
+            @include mq("sp") {
+                margin-bottom: 60px;
+            }
+            
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 50%;
+                right: -32px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 40px 0 40px 32px;
+                border-color: transparent transparent transparent $pureWhite;
+                transform: translateY(50%);
+
+                @include mq("sp") {
+                    bottom: -56px;
+                    right: 50%;
+                    transform: translate(50%, 0) rotate(90deg);   
+                }
+            }
+
+
+        }
+
+        &__upper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        &__head {
+            color: $primary-color;
+
+            &--small {
+                font-size: 24px;
+                line-height: 1;
+                font-weight: bold;
+
+                @include mq("tab") {
+                    font-size: 20px;
+                }
+                @include mq("sp") {
+                    font-size: 18px;
+                }
+            }
+
+            &--num {
+                font-family: $ROBOTO;
+                font-size: 48px;
+                font-weight: 900;
+
+                @include mq("tab") {
+                    font-size: 42px;
+                }
+                @include mq("sp") {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        &__imgArea {
+            margin: 0;
+            width: 180px;
+            border-radius: 8px;
+
+            @include mq("tab") {
+                width: 150px;
+            }
+            @include mq("sp") {
+                width: 230px;
+                height: 150px;
+                overflow: hidden;
+                position: relative;
+            }
+        }
+        &__img {
+            width: 100%;
+
+            @include mq("sp") {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                object-fit: cover;
+            }
+        }
+
+        &__textArea {
+            margin-top: 32px;
+
+            @include mq("sp") {
+                margin-top: 14px;
+            }
+        }
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+
+            @include mq("tab") {
+                font-size: 16px;
+            }
+        }
+        &__text {
+            margin-top: 12px;
+            font-size: 15px;
+            font-weight: 500;
+
+            @include mq("tab") {
+                font-size: 14px;
+            }
+            @include mq("sp") {
+                margin-top: 6px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__btn {
+        width: 250px;
+        height: 54px;
+        margin: 60px auto 0;
+    }
+
+}

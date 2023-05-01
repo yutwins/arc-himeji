@@ -16,7 +16,7 @@ $breakpoints: (
 }
 
 .inner {
-    width: min(100% - 2rem, 1200px);
+    width: min(100% - 2rem, 1100px);
     margin-inline: auto;
     
     // width: 1200px;
@@ -40,5 +40,34 @@ $breakpoints: (
     &__text {
         color: $pureBlack;
         font-weight: 500;
+    }
+}
+
+.pc-only {
+    display: block;
+    
+    @include mq("sp") {
+        display: none;
+    }
+}
+.sp-only {
+    display: none;
+    
+    @include mq("sp") {
+        display: block;
+    }
+}
+
+.section__title {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+
+    @include mq("tab") {
+        font-size: 42px;
+    }
+
+    @include mq("sp") {
+        font-size: 30px;
     }
 }

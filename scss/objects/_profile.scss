@@ -2,4 +2,131 @@
 
 .profile {
     
+    &-inner {
+        padding: 190px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        @include mq("sp") {
+            display: block;
+            padding: 60px 0;
+        }
+    }
+
+    &-left {
+        text-align: center;
+
+        @include mq("sp") {
+            width: 100%;
+        }
+    }
+
+    &-imgArea {
+        margin: 0;
+
+        &__img {
+            width: 240px;
+            height: auto;
+
+            @include mq("sp") {
+                width: 180px;
+            }
+        }
+    }
+
+    &__post {
+        font-size: 18px;
+        font-weight: bold;
+        color: $gray-post;
+    }
+    &__name {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: bold;
+        margin-top: 2px;
+    }
+    &__furigana {
+        margin-top: 6px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    &__GLink {
+        margin-top: 10px;
+        color: $link-color;
+        font-weight: 500;
+        font-size: 12px;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &-right {
+        width: 62.7%;
+
+        @include mq("sp") {
+            width: 100%;
+            max-width: 350px;
+            margin: 24px auto 0;
+        }
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 1.5;
+
+        @include mq("tab") {
+            font-size: 32px;
+        }
+        @include mq("sp") {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 12px;
+        font-size: 20px;
+        color: $primary-color;
+
+        @include mq("tab") {
+            font-size: 18px;
+        }
+        @include mq("sp") {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    &-textArea {
+        margin-top: 20px;
+        background-color: $accent-color;
+        padding: 14px 22px;
+        
+        @include mq("sp") {
+            padding: 14px 12px;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 500;
+
+        &:not(:first-child) {
+            margin-top: 10px;
+
+            @include mq("sp") {
+                margin-top: 6px;
+            }
+        }
+        
+        @include mq("tab") {
+            font-size: 16px;
+        }
+        @include mq("sp") {
+            font-size: 14px;
+        }
+    }
 }

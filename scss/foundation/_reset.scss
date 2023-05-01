@@ -1,3 +1,4 @@
+@use "../layout/common" as *;
 @use "./color" as *;
 @use "./variables" as *;
 
@@ -11,6 +12,12 @@ html,
 body {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+    
+    @include mq("sp") {
+        scroll-padding-top: 90px;
+    }
 }
 
 body {
@@ -23,6 +30,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    vertical-align: bottom;
 }
 
 ul,

@@ -1,0 +1,239 @@
+@use "../foundation/global" as *;
+
+.worried {
+
+    &-inner {
+
+    }
+
+    &__title {
+        color: $secondary-color;
+        // white-space: nowrap;
+
+        @include mq("sp") {
+            font-size: 1.8rem;
+        }
+    }
+
+
+    &-upperItems {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 440px;
+            position: absolute;
+            bottom: 40%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            background: url(../../images/arc-dotted-line.png) no-repeat center center / cover;
+        }
+
+        @include mq("sp") {
+            display: block;
+            max-width: 350px;
+            margin: 20px auto 0;
+
+            &:before {
+                height: 100px;
+                bottom: -5%;
+            }
+        }
+    }
+
+    &-upperItem {
+        width: 48%;
+
+        @include mq("sp") {
+            width: 100%;
+        }
+
+        &__icon {
+            display: block;
+            width: auto;
+            height: 100px;
+            margin: 0 auto 12px;
+
+            @include mq("sp") {
+                height: 80px;
+            }
+        }
+
+        &__headArea {
+            padding: 14px 0;
+            text-align: center;
+            background-color: $primary-color;
+            border-radius: 8px 8px 0 0;
+
+            @include mq("sp") {
+                padding: 10px 0;
+            }
+        }
+
+        &__head {
+            font-size: 24px;
+            line-height: 40px;
+            font-weight: bold;
+            color: $pureWhite;
+
+            @include mq("sp") {
+                font-size: 18px;
+                line-height: 2;
+            }
+
+            .yuigon-furigana {
+                position: relative;
+
+                &::before {
+                    content: "カタチ";
+                    position: absolute;
+                    top: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 12px;
+                    font-weight: 500;
+                    white-space: nowrap;
+
+                    @include mq("sp") {
+                        top: -12px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        &__textArea {
+            padding: 36px 0;
+
+            @include mq("sp") {
+                padding: 24px;
+            }
+        }
+        
+        &__textUl {
+        }
+
+        &__textList {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            @include mq("sp") {
+                gap: 6px;
+            }
+
+            &:not(:first-child) {
+                margin-top: 32px;
+
+                @include mq("sp") {
+                    margin-top: 16px;
+                }
+            }
+        }
+
+        &__textIcon {
+            width: 28px;
+            height: auto;
+
+            @include mq("sp") {
+                width: 20px;
+            }
+        }
+
+        &__text {
+            font-size: 20px;
+            font-weight: bold;
+
+            @include mq("sp") {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &-bottom {
+        padding-top: 110px;
+
+        &__title {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+
+            @include mq("sp") {
+                font-size: 22px;
+                font-size: 1.2rem;
+                // white-space: nowrap;
+            }
+        }
+
+        &__container {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4.5%;
+
+            @include mq("sp") {
+                display: block;
+                margin-top: 24px;
+            }
+        }
+
+        &__iconArea {
+            margin: 0;
+            max-width: 100%;
+
+            @include mq("sp") {
+                display: grid;
+                place-items: center;
+            }
+        }
+        &__icon {
+            width: 335px;
+            height: auto;
+
+            @include mq("sp") {
+                width: 320px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 32px;
+            font-weight: 500;
+
+            @include mq("sp") {
+                margin-top: 14px;
+                font-size: 14px;
+                line-height: 1.5;
+                text-align: center;
+            }
+        }
+
+        &__arrow {
+            width: 50px;
+            height: 50px;
+            margin: 18px auto 0;
+            border-right: 2px solid $pureBlack;
+            border-bottom: 2px solid $pureBlack;
+            transform: rotate(45deg);
+
+            @include mq("sp") {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__btn {
+        width: 240px;
+        height: 54px;
+        margin: 32px auto 0;
+    }
+}

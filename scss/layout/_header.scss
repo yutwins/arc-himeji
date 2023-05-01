@@ -1,6 +1,14 @@
 @use "../foundation/global" as *;
 
 
+// スマホメニュー
+#container {
+    position: relative;
+    z-index: 10;
+    background-color: $pureWhite;
+    transition: all 0.5s ease 0s;
+}
+
 .header {
     width: 100%;
     height: 100px;
@@ -154,6 +162,7 @@
         &__btn {
             width: 140px;
             height: 36px;
+            margin-top: 12px;
         }
         &__btnText {
             font-size: 14px;
@@ -161,20 +170,12 @@
     }
 }
 
-// スマホメニュー
-#container {
-    position: relative;
-    background-color: $pureWhite;
-    transition: all 0.5s;
-}
-
 
 .mobile-menu {
     width: 300px;
     position: fixed;
-    top: 60px;
+    top: 30px;
     right: 0;
-    z-index: -1;
 
     &__cover {
         position: absolute;
@@ -242,13 +243,18 @@
         text-decoration: none;
     }
 
+    &__logo {
+        width: 240px;
+        height: auto;
+    }
+
 }
 
 .menu-open {
 
     & #container {
-        z-index: 2;
-        height: 100vh;
+        // z-index: 2;
+        // height: 100%;
         transform: translate(-300px, 60px);
         box-shadow: 0 8px 40px -10px rgba($cMenuClose, .8);
     }
@@ -258,6 +264,7 @@
         &__cover {
             opacity: 1;
             visibility: visible;
+            z-index: 100;
         }
 
         &__btn {
@@ -266,7 +273,7 @@
     
                 &:nth-child(1) {
                     transition-delay: 70ms;
-                    transform: translateY(7.5px) rotate(135deg);
+                    transform: translateY(7px) rotate(135deg);
                 }
                 &:nth-child(2) {
                     transition-delay: 0s;
@@ -274,7 +281,7 @@
                 }
                 &:nth-child(3) {
                     transition-delay: 140ms;
-                    transform: translateY(-7.5px) rotate(-135deg);
+                    transform: translateY(-7px) rotate(-135deg);
                 }
             }
         }
