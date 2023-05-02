@@ -90,7 +90,7 @@
     &__subtitle {
         margin-top: 12px;
         font-size: 20px;
-        color: $primary-color;
+        color: $accent-color;
 
         @include mq("tab") {
             font-size: 18px;
@@ -103,11 +103,13 @@
 
     &-textArea {
         margin-top: 20px;
-        background-color: $accent-color;
+        background-color: $primary-color;
         padding: 14px 22px;
         
         @include mq("sp") {
-            padding: 14px 12px;
+            width: 100vw;
+            margin: 40px calc(50% - 50vw) 0;
+            padding: 14px 12.5px;
         }
     }
     &__text {
@@ -126,7 +128,9 @@
             font-size: 16px;
         }
         @include mq("sp") {
-            font-size: 14px;
+            font-size: 13px;
+            max-width: 350px;
+            margin: 0 auto;
         }
     }
 }

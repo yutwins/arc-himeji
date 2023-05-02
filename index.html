@@ -48,41 +48,90 @@
 
 <body>
     <div id="global-container">
+        <nav class="mobile-menu">
+            <ul class="mobile-menu__main">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">
+                        <img src="./images/arc-footer-logo.png" alt="ロゴ" class="mobile-menu__logo">
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#flow">
+                        <span class="main-title">ご相談の流れ</span>
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#service">
+                        <span class="main-title">サービス</span>
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#blog">
+                        <span class="main-title">ブログ</span>
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#qa">
+                        <span class="main-title">よくあるご質問</span>
+                    </a>
+                </li>
+                <li class="mobile-menu__item mobile-menu__item--contact">
+                    <a href="tel:090-4288-9385" class="mobile-menu__link">
+                        <img src="./images/arc-icon-telephone.png" alt="電話アイコン" class="mobile-menu__subIcon">
+                        <span class="mobile-menu__subText">電話をかける</span>
+                    </a>
+                </li>
+                <li class="mobile-menu__item mobile-menu__item--contact">
+                    <a href="#contact" class="mobile-menu__link">
+                        <img src="./images/arc-icon-mail-beige.png" alt="メールアイコン" class="mobile-menu__subIcon">
+                        <span class="mobile-menu__subText">メールを送る</span>
+                    </a>
+                </li>
+                <li class="mobile-menu__item mobile-menu__item--contact">
+                    <a href="https://lin.ee/gDSsRGq" class="mobile-menu__link">
+                        <img src="./images/arc-icon-line.png" alt="LINEアイコン" class="mobile-menu__subIcon">
+                        <span class="mobile-menu__subText">LINEを送る</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div id="container">
             <div class="mobile-menu__cover"></div>
             <header class="header">
                 <div class="header-inner">
                     <div class="header-left">
                         <a href="#" class="header-logo">
-                            <img src="./images/arc-header-logo.png" alt="ロゴ" class="header-logo__icon">
-                            <p class="header-logo__text">アーク行政書士</p>
+                            <img src="./images/arc-footer-logo.png" alt="ロゴ" class="header-logo__icon">
                         </a>
                         <ul class="header-ul">
                             <li class="header-li">
                                 <a href="#flow" class="header-li__item">ご相談の流れ</a>
                             </li>
                             <li class="header-li">
-                                <a href="" class="header-li__item">サービス</a>
+                                <a href="#service" class="header-li__item">サービス</a>
                             </li>
                             <li class="header-li">
-                                <a href="" class="header-li__item">ブログ</a>
+                                <a href="#blog" class="header-li__item">ブログ</a>
                             </li>
                             <li class="header-li">
-                                <a href="" class="header-li__item">よくあるご質問</a>
+                                <a href="#qa" class="header-li__item">よくあるご質問</a>
                             </li>
                         </ul>
                     </div>
                     <div class="header-right">
                         <div class="header-textArea">
                             <div class="header-tel">
-                                <img src="./images/arc-tel-icon.png" alt="電話アイコン" class="header-tel__icon">
+                                <img src="./images/arc-icon-tel-brown.png" alt="電話アイコン" class="header-tel__icon">
                                 <a href="tel:090-4288-9385" class="header-tel__num">090-4288-9385</a>
                             </div>
                             <p class="header-businessHour">受付時間：全日 9:00～18:00<br>土日祝・夜間対応可能</p>
                         </div>
                         <div class="header-contact">
-                            <img src="./images/arc-icon-mail.png" alt="メールアイコン" class="header-contact__icon">
-                            <a href="#" class="btn header-contact__btn"><span class="btn__text header-contact__btnText">お問い合わせ</span></a>
+                            <a href="#" class="btn header-contact__btn">
+                                <img src="./images/arc-icon-mail.png" alt="メールアイコン" class="btn__icon">
+                                <span class="btn__text header-contact__btnText">お問い合わせ</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +159,7 @@
                 <div class="inner profile-inner">
                     <div class="profile-left">
                         <figure class="profile-imgArea">
-                            <img src="./images/arc-mitsuoka-profile.png" alt="プロフィール画像" class="profile-imgArea__img">
+                            <img src="./images/arc-profile-img.jpg" alt="プロフィール画像" class="profile-imgArea__img">
                         </figure>
                         <p class="profile__post">代表</p>
                         <p class="profile__furigana">（みつおか もとお）</p>
@@ -120,11 +169,11 @@
                         <h2 class="profile__title">お気軽にご相談ください<br>わかりやすくご説明いたします</h2>
                         <h3 class="profile__subtitle">相続と不動産のプロが導く、<br class="sp-only">安心・確実な相続・遺言サポート</h3>
                         <div class="profile-textArea">
-                            <p class="profile__text"> アーク行政書士事務所は、兵庫県姫路市で相続・遺言でお悩みの方をサポート。「アーク」はフランス語で「虹」、「架け橋」の意味。家族の数だけ相続のカタチがあります。「虹」のように色とりどりのご家族の想いと真摯に向き合い、お客さまの幸福な未来への懸け橋になりたいという私たちの強い想いを込めています。</p>
+                            <p class="profile__text">　アーク行政書士事務所は、兵庫県姫路市で相続・遺言でお悩みの方をサポート。「アーク」はフランス語で「虹」、「架け橋」の意味。<br>　家族の数だけ相続のカタチがあります。「虹」のように<br class="sp-only">色とりどりのご家族の想いと真摯に向き合い、お客さまの幸福な未来への懸け橋になりたいという私たちの強い想いを込めています。</p>
                             <p class="profile__text">
-                            弊事務所では、行政書士・宅地建物取引士が、相続、遺言、不動産のプロとして、シニア世代のご家族の財産管理や資産承継をサポート。ご家族への想いや大切な財産をお守りするため、常に一期一会の姿勢で寄り添い、先行きのご不安を少しでも安心に変えられるよう全力でサポートいたします。</p>
+                            　弊事務所では、行政書士・宅地建物取引士が、相続、遺言、不動産のプロとして、シニア世代のご家族の財産管理<br class="sp-only">や資産承継をサポート。ご家族への想いや大切な財産をお守りするため、常に一期一会の姿勢で寄り添い、先行きのご不安を少しでも安心に変えられるよう全力でサポートいたします。</p>
                             <p class="profile__text">
-                            不動産についてのお悩みがあれば、活用、売却、査定などのご相談も承りますので、是非お気軽にご相談下さい。</p>
+                            　不動産についてのお悩みがあれば、活用、売却、査定などのご相談も承りますので、是非お気軽にご相談下さい。</p>
                         </div>
                     </div>
                 </div>
@@ -192,7 +241,10 @@
                         </div>
                         <div class="worried-bottom__arrow"></div>
                     </div>
-                    <a href="#" class="btn worried__btn"><span class="btn__text">相談する</span></a>
+                    <a href="#" class="btn worried__btn">
+                        <img src="./images/arc-icon-mail.png" alt="メールアイコン" class="btn__icon">
+                        <span class="btn__text">相談する</span>
+                    </a>
                 </div>
             </section>
             <!-- /.worried -->
@@ -244,7 +296,10 @@
                                    <p class="flow-list__head--num">01</p>
                                 </div>
                                 <figure class="flow-list__imgArea">
-                                    <img src="./images/arc-flow-img01.png" alt="ステップ1アイコン" class="flow-list__img">
+                                    <picture>
+                                        <source srcset="./images/arc-flow-img01.png" media="(min-width: 768px)">
+                                        <img src="./images/arc-flow-img01-sp.png" alt="ステップ1アイコン"  class="flow-list__img">
+                                    </picture>
                                 </figure>
                             </div>
                             <div class="flow-list__textArea">
@@ -259,7 +314,10 @@
                                    <p class="flow-list__head--num">02</p>
                                 </div>
                                 <figure class="flow-list__imgArea">
-                                    <img src="./images/arc-flow-img02.png" alt="ステップ1アイコン" class="flow-list__img">
+                                    <picture>
+                                        <source srcset="./images/arc-flow-img02.png" media="(min-width: 768px)">
+                                        <img src="./images/arc-flow-img02-sp.png" alt="ステップ2アイコン"  class="flow-list__img">
+                                    </picture>
                                 </figure>
                             </div>
                             <div class="flow-list__textArea">
@@ -274,7 +332,10 @@
                                    <p class="flow-list__head--num">03</p>
                                 </div>
                                 <figure class="flow-list__imgArea">
-                                    <img src="./images/arc-flow-img03.png" alt="ステップ1アイコン" class="flow-list__img">
+                                    <picture>
+                                        <source srcset="./images/arc-flow-img03.png" media="(min-width: 768px)">
+                                        <img src="./images/arc-flow-img03-sp.png" alt="ステップ3アイコン"  class="flow-list__img">
+                                    </picture>
                                 </figure>
                             </div>
                             <div class="flow-list__textArea">
@@ -289,7 +350,10 @@
                                    <p class="flow-list__head--num">04</p>
                                 </div>
                                 <figure class="flow-list__imgArea">
-                                    <img src="./images/arc-flow-img04.png" alt="ステップ1アイコン" class="flow-list__img">
+                                    <picture>
+                                        <source srcset="./images/arc-flow-img04.png" media="(min-width: 768px)">
+                                        <img src="./images/arc-flow-img04-sp.png" alt="ステップ4アイコン"  class="flow-list__img">
+                                    </picture>
                                 </figure>
                             </div>
                             <div class="flow-list__textArea">
@@ -304,7 +368,10 @@
                                    <p class="flow-list__head--num">05</p>
                                 </div>
                                 <figure class="flow-list__imgArea">
-                                    <img src="./images/arc-flow-img05.png" alt="ステップ1アイコン" class="flow-list__img">
+                                    <picture>
+                                        <source srcset="./images/arc-flow-img05.png" media="(min-width: 768px)">
+                                        <img src="./images/arc-flow-img05-sp.png" alt="ステップ5アイコン"  class="flow-list__img">
+                                    </picture>
                                 </figure>
                             </div>
                             <div class="flow-list__textArea">
@@ -313,7 +380,10 @@
                             </div>
                         </li>
                     </ol>
-                    <a href="#" class="btn flow__btn"><span class="btn__text">相談する</span></a>
+                    <a href="#" class="btn worried__btn">
+                        <img src="./images/arc-icon-mail.png" alt="メールアイコン" class="btn__icon">
+                        <span class="btn__text">相談する</span>
+                    </a>
                 </div>
             </section>
             <!-- /.flow -->
@@ -333,7 +403,7 @@
                                     <div class="service-item__priceArea">
                                         <div class="service-item__priceAreaInner">
                                             <h3 class="service-item__price">44,000円〜</h3>
-                                            <p class="service-item__priceSupplement">相続人の数が4人以上になる場合は<br>1名につき5,500円が加算</p>
+                                            <p class="service-item__priceSupplement">相続人の数が4人以上になる場合は<br>1名につき5,500円加算</p>
                                         </div>
                                     </div>
                                 </div>
@@ -374,8 +444,8 @@
                                         <p class="service-item__desc">不動産、預貯金、有価証券などの遺産を<br>相続人に確実に承継するための<br>専門的なサポートを提供します。</p>
                                     </div>
                                     <div class="service-item__priceArea">
-                                        <h3 class="service-item__price">44,000円〜</h3>
-                                        <p class="service-item__priceSupplement">相続人の数が4人以上になる場合は<br>1名につき5,500円が加算</p>
+                                        <h3 class="service-item__price">33,000円〜</h3>
+                                        <p class="service-item__priceSupplement">申請窓口数×33,000円</p>
                                     </div>
                                 </div>
                             </div>
@@ -438,8 +508,8 @@
                                     </div>
                                     <div class="service-item__priceArea">
                                         <div class="service-item__priceAreaInner">
-                                            <h3 class="service-item__price">3,300円</h3>
-                                            <p class="service-item__priceSupplement">申請窓口数×3,300円</p>
+                                            <h3 class="service-item__price">5,500円</h3>
+                                            <p class="service-item__priceSupplement">申請窓口数×5,500円</p>
                                         </div>
                                     </div>
                                 </div>
@@ -465,58 +535,144 @@
             <section class="voice"></section>
             <!-- /.voice -->
 
-            <section id="blog" class="blog">
-                <div class="inner blog-inner">
-                    <h2 class="section__title blog__title">ブログ</h2>
-                    <ul class="blog-ul">
-                        <li class="blog-list">
-                            <a href="" class="blog-list__item">
-                                <div class="blog-list__itemInfo">
-                                    <p class="blog-list__itemDate">2023.05.04</p>
-                                    <div class="blog-list__itemCategory">
-                                        <p class="blog-list__itemCategoryText">相続</p>
+            <section id="qa" class="qa">
+                <div class="inner qa-inner">
+                    <h2 class="section__title qa__title">よくあるご質問</h2>
+                    <div class="qa-wrapper">
+                        <div class="qa-wrap">
+                            <h3 class="qa-wrap__title"><span class="qa-wrap__title--triangle"></span>【相続】</h3>
+                            <div class="qa-items">
+                                <div class="qa-item">
+                                    <div class="qa-item__q">
+                                        <h4 class="qa-item__qHead">Q.</h4>
+                                        <p class="qa-item__qText">不動産の相続登記ができていないが、相談や手続きは可能ですか？</p>
+                                    </div>
+                                    <div class="qa-item__a">
+                                        <h4 class="qa-item__aHead">A.</h4>
+                                        <p class="qa-item__aText">まずは弊事務所にご相談下さい。遺言書や遺産分割協議書の有無等により手続きは異なります。弊事務所が個々の事案に応じた手続きをご案内いたしますので、安心してお任せください。</p>
                                     </div>
                                 </div>
-                                <h4 class="blog-list__itemTitle">「家督相続」って？</h4>
-                            </a>
-                        </li>
-                        <li class="blog-list">
-                            <a href="" class="blog-list__item">
-                                <div class="blog-list__itemInfo">
-                                    <p class="blog-list__itemDate">2023.05.04</p>
-                                    <div class="blog-list__itemCategory">
-                                        <p class="blog-list__itemCategoryText">相続</p>
+                                <div class="qa-item">
+                                    <div class="qa-item__q">
+                                        <h4 class="qa-item__qHead">Q.</h4>
+                                        <p class="qa-item__qText">遠方に住んでいますが、兵庫県内の実家の相続手続きをお願いできますか？</p>
+                                    </div>
+                                    <div class="qa-item__a">
+                                        <h4 class="qa-item__aHead">A.</h4>
+                                        <p class="qa-item__aText">弊事務所では、遠方でお暮しの相続人様からのご依頼もお引き受けいたしておりますので、安心してお任せください。</p>
                                     </div>
                                 </div>
-                                <h4 class="blog-list__itemTitle">生命保険照会制度のご紹介</h4>
-                            </a>
-                        </li>
-                        <li class="blog-list">
-                            <a href="" class="blog-list__item">
-                                <div class="blog-list__itemInfo">
-                                    <p class="blog-list__itemDate">2023.05.04</p>
-                                    <div class="blog-list__itemCategory">
-                                        <p class="blog-list__itemCategoryText">お知らせ</p>
+                                <div class="qa-item">
+                                    <div class="qa-item__q">
+                                        <h4 class="qa-item__qHead">Q.</h4>
+                                        <p class="qa-item__qText">突然のことで何から手を付けていいのかわからないです。</p>
+                                    </div>
+                                    <div class="qa-item__a">
+                                        <h4 class="qa-item__aHead">A.</h4>
+                                        <p class="qa-item__aText">相続手続きは、一生のうちに何回も経験することではないので、わからないのが当たり前です。<br>また、遺言書の有無、相続財産の内容、相続人様の人数や年齢等によって、その手続きは異なります。<br>弊事務所では、ご相談者様がご納得されるまで、わかりやすく丁寧なご説明に努めさせて頂いておりますので、<br>安心してお申し付け下さい。</p>
                                     </div>
                                 </div>
-                                <h4 class="blog-list__itemTitle">「遂に京都市に空家税が創設されそうです。」</h4>
-                            </a>
-                        </li>
-                        <li class="blog-list">
-                            <a href="" class="blog-list__item">
-                                <div class="blog-list__itemInfo">
-                                    <p class="blog-list__itemDate">2023.05.04</p>
-                                    <div class="blog-list__itemCategory">
-                                        <p class="blog-list__itemCategoryText">お知らせ</p>
+                                <div class="qa-item">
+                                    <div class="qa-item__q">
+                                        <h4 class="qa-item__qHead">Q.</h4>
+                                        <p class="qa-item__qText">相続税がかかりそうな相続手続きでもお願いできますか？</p>
+                                    </div>
+                                    <div class="qa-item__a">
+                                        <h4 class="qa-item__aHead">A.</h4>
+                                        <p class="qa-item__aText">まずは弊事務所にご相談下さい。相続財産調査の結果、相続税のご負担が予想される場合は、<br>提携税理士と二人三脚で、お客さまの税負担の最小化を見据えた相続手続きをご提案させて頂きます。</p>
                                     </div>
                                 </div>
-                                <h4 class="blog-list__itemTitle">「繰越通帳廃棄のデメリットについて」</h4>
-                            </a>
-                        </li>
-                    </ul>
+                                <div class="qa-item">
+                                    <div class="qa-item__q">
+                                        <h4 class="qa-item__qHead">Q.</h4>
+                                        <p class="qa-item__qText">不動産の価値がわからないが、相続手続きを頼めば、不動産査定もお願いできますか？</p>
+                                    </div>
+                                    <div class="qa-item__a">
+                                        <h4 class="qa-item__aHead">A.</h4>
+                                        <p class="qa-item__aText">もちろんです。不動産は物理的に分けにくい財産なので、現在価値を正確に把握することが肝要です。<br>弊職は、宅地建物取引士としても活動していますので、ご要望があれば、無料で不動産査定書をお作り致します。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa-wrap">
+                            <h3 class="qa-wrap__title"><span class="qa-wrap__title--triangle"></span>【遺言】</h3>
+                            <div class="qa-items">
+                                <div class="qa-item">
+                                    <div class="qa-item__q">
+                                        <h4 class="qa-item__qHead">Q.</h4>
+                                        <p class="qa-item__qText">エンディングノートを作成しておけば、遺言書は不要ですか？</p>
+                                    </div>
+                                    <div class="qa-item__a">
+                                        <h4 class="qa-item__aHead">A.</h4>
+                                        <p class="qa-item__aText">エンディングノートには法的効力がないため、故人が法的効力のある遺言書を残していない場合は、相続人間での話し合い（遺産分割協議）が必須です。万一、取り分で揉めた場合は、裁判所での調停、審判の手続きに発展し、家族関係が崩壊する不幸に見舞われるリスクがあるので、次のような場合には、遺言書を残されることをお勧めいたします。<br>
+                                            ・財産分けの難しい不動産が主な相続財産である場合<br>
+                                            ・身の回りの世話や介護の負担が相続人間で極端に異なっている場合<br>
+                                            ・日頃交流のない親戚や再婚前の実子等が相続人に加わる場合<br>
+                                            ・認知症や知的障害を患った相続人を抱える場合 <br>
+                                            ・特定の人、団体等に多くあるいは少なく、遺産分けをしたい場合</p>
+                                    </div>
+                                </div>
+                                <div class="qa-item">
+                                    <div class="qa-item__q">
+                                        <h4 class="qa-item__qHead">Q.</h4>
+                                        <p class="qa-item__qText">遺言書を公正証書で作成するメリットは何ですか？</p>
+                                    </div>
+                                    <div class="qa-item__a">
+                                        <h4 class="qa-item__aHead">A.</h4>
+                                        <p class="qa-item__aText">自筆で記した遺言書は、法務局保管制度を利用すれば、紛失、改ざん、破棄のリスクは消えますが、遺言書作成時、遺言者の意思判断能力がなかったとして無効になるリスクは消えません。その点、公正証書で作成すれば、遺言書が有効となる形式的な要件を備えているのはもちろんのこと、公証人が遺言者の意思判断能力を担保してくれるので、無効になることはまずありません。大切なご家族に安心して財産をバトンタッチするためにも、遺言書は公正証書でお残しになることをお勧めいたします。</p>
+                                    </div>
+                                </div>
+                                <div class="qa-item">
+                                    <div class="qa-item__q">
+                                        <h4 class="qa-item__qHead">Q.</h4>
+                                        <p class="qa-item__qText">障害のある子供の面倒をみなけらばならないという遺言書は有効でしょうか？</p>
+                                    </div>
+                                    <div class="qa-item__a">
+                                        <h4 class="qa-item__aHead">A.</h4>
+                                        <p class="qa-item__aText">子供の面倒を誰がみるかという点は、法律で定められた遺言事項ではないので、法的な効力はありません。ただし、遺言書には、付言事項という法律行為以外のことで家族に伝えたい大切なメッセージを残すことは可能です。また、どうしても法的な効力を持たせたい場合は、負担付遺贈の形にするなどの工夫の余地はあります。</p>
+                                    </div>
+                                </div>
+                                <div class="qa-item">
+                                    <div class="qa-item__q">
+                                        <h4 class="qa-item__qHead">Q.</h4>
+                                        <p class="qa-item__qText">妻が先に亡くなってしまう場合も想定した遺言書は作れますか？</p>
+                                    </div>
+                                    <div class="qa-item__a">
+                                        <h4 class="qa-item__aHead">A.</h4>
+                                        <p class="qa-item__aText">はい、作れます。例えば、妻に1/2と息子2人に各1/4相続させる遺言書において、「万一、妻が夫より先に死亡したときは、夫が妻に相続させるとした財産を長男に相続させる」と記載しておけば、遺言書を作り直す必要はありません。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa-wrap">
+                            <h3 class="qa-wrap__title"><span class="qa-wrap__title--triangle"></span>【全般】</h3>
+                            <div class="qa-items">
+                                <div class="qa-item">
+                                    <div class="qa-item__q">
+                                        <h4 class="qa-item__qHead">Q.</h4>
+                                        <p class="qa-item__qText">どれくらいの費用がかかるのか知りたいです。</p>
+                                    </div>
+                                    <div class="qa-item__a">
+                                        <h4 class="qa-item__aHead">A.</h4>
+                                        <p class="qa-item__aText">定額単価制を採用させて頂いており、試算によりおおよその費用は確認可能ですが、より詳細な費用は個別にお問い合せ下さい。</p>
+                                    </div>
+                                </div>
+                                <div class="qa-item">
+                                    <div class="qa-item__q">
+                                        <h4 class="qa-item__qHead">Q.</h4>
+                                        <p class="qa-item__qText">平日は仕事が忙しいが、土日でも相談や面談は可能ですか？</p>
+                                    </div>
+                                    <div class="qa-item__a">
+                                        <h4 class="qa-item__aHead">A.</h4>
+                                        <p class="qa-item__aText">土日、祝日、夜間でもお客さまのご都合に合わせ、ご対応させて頂いています。 また、Web（オンライン）面談も可能ですので、お気軽にお申し付け下さい。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <!-- /.blog -->
+            <!-- /#qa.qa -->
 
             <section id="contact" class="contact">
                 <div class="inner contact-inner">
@@ -606,144 +762,59 @@
             </section>
             <!-- /.contact -->
 
-            <section id="qa" class="qa">
-                <div class="inner qa-inner">
-                    <h2 class="section__title qa__title">よくあるご質問</h2>
-                    <div class="qa-wrapper">
-                        <div class="qa-wrap">
-                            <h3 class="qa-wrap__title">【全般】</h3>
-                            <div class="qa-items">
-                                <div class="qa-item">
-                                    <div class="qa-item__q">
-                                        <h4 class="qa-item__qHead">Q.</h4>
-                                        <p class="qa-item__qText">どれくらいの費用がかかるのか知りたいです。</p>
-                                    </div>
-                                    <div class="qa-item__a">
-                                        <h4 class="qa-item__aHead">A.</h4>
-                                        <p class="qa-item__aText">定額単価制を採用させて頂いており、試算によりおおよその費用は確認可能ですが、より詳細な費用は個別にお問い合せ下さい。</p>
+            <section id="blog" class="blog">
+                <div class="inner blog-inner">
+                    <h2 class="section__title blog__title">ブログ</h2>
+                    <ul class="blog-ul">
+                        <li class="blog-list">
+                            <a href="" class="blog-list__item">
+                                <div class="blog-list__itemInfo">
+                                    <p class="blog-list__itemDate">2023.05.04</p>
+                                    <div class="blog-list__itemCategory">
+                                        <p class="blog-list__itemCategoryText">相続</p>
                                     </div>
                                 </div>
-                                <div class="qa-item">
-                                    <div class="qa-item__q">
-                                        <h4 class="qa-item__qHead">Q.</h4>
-                                        <p class="qa-item__qText">平日は仕事が忙しいが、土日でも相談や面談は可能ですか？</p>
-                                    </div>
-                                    <div class="qa-item__a">
-                                        <h4 class="qa-item__aHead">A.</h4>
-                                        <p class="qa-item__aText">土日、祝日、夜間でもお客さまのご都合に合わせ、ご対応させて頂いています。 また、Web（オンライン）面談も可能ですので、お気軽にお申し付け下さい。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="qa-wrap">
-                            <h3 class="qa-wrap__title">【相続】</h3>
-                            <div class="qa-items">
-                                <div class="qa-item">
-                                    <div class="qa-item__q">
-                                        <h4 class="qa-item__qHead">Q.</h4>
-                                        <p class="qa-item__qText">不動産の相続登記ができていないが、相談や手続きは可能ですか？</p>
-                                    </div>
-                                    <div class="qa-item__a">
-                                        <h4 class="qa-item__aHead">A.</h4>
-                                        <p class="qa-item__aText">まずは弊事務所にご相談下さい。遺言書や遺産分割協議書の有無等により手続きは異なります。弊事務所が個々の事案に応じた手続きをご案内いたしますので、安心してお任せください。</p>
+                                <h4 class="blog-list__itemTitle">「家督相続」って？</h4>
+                            </a>
+                        </li>
+                        <li class="blog-list">
+                            <a href="" class="blog-list__item">
+                                <div class="blog-list__itemInfo">
+                                    <p class="blog-list__itemDate">2023.05.04</p>
+                                    <div class="blog-list__itemCategory">
+                                        <p class="blog-list__itemCategoryText">相続</p>
                                     </div>
                                 </div>
-                                <div class="qa-item">
-                                    <div class="qa-item__q">
-                                        <h4 class="qa-item__qHead">Q.</h4>
-                                        <p class="qa-item__qText">遠方に住んでいますが、兵庫県内の実家の相続手続きをお願いできますか？</p>
-                                    </div>
-                                    <div class="qa-item__a">
-                                        <h4 class="qa-item__aHead">A.</h4>
-                                        <p class="qa-item__aText">弊事務所では、遠方でお暮しの相続人様からのご依頼もお引き受けいたしておりますので、安心してお任せください。</p>
-                                    </div>
-                                </div>
-                                <div class="qa-item">
-                                    <div class="qa-item__q">
-                                        <h4 class="qa-item__qHead">Q.</h4>
-                                        <p class="qa-item__qText">突然のことで何から手を付けていいのかわからないです。</p>
-                                    </div>
-                                    <div class="qa-item__a">
-                                        <h4 class="qa-item__aHead">A.</h4>
-                                        <p class="qa-item__aText">相続手続きは、一生のうちに何回も経験することではないので、わからないのが当たり前です。<br>また、遺言書の有無、相続財産の内容、相続人様の人数や年齢等によって、その手続きは異なります。<br>弊事務所では、ご相談者様がご納得されるまで、わかりやすく丁寧なご説明に努めさせて頂いておりますので、<br>安心してお申し付け下さい。</p>
+                                <h4 class="blog-list__itemTitle">生命保険照会制度のご紹介</h4>
+                            </a>
+                        </li>
+                        <li class="blog-list">
+                            <a href="" class="blog-list__item">
+                                <div class="blog-list__itemInfo">
+                                    <p class="blog-list__itemDate">2023.05.04</p>
+                                    <div class="blog-list__itemCategory">
+                                        <p class="blog-list__itemCategoryText">お知らせ</p>
                                     </div>
                                 </div>
-                                <div class="qa-item">
-                                    <div class="qa-item__q">
-                                        <h4 class="qa-item__qHead">Q.</h4>
-                                        <p class="qa-item__qText">相続税がかかりそうな相続手続きでもお願いできますか？</p>
-                                    </div>
-                                    <div class="qa-item__a">
-                                        <h4 class="qa-item__aHead">A.</h4>
-                                        <p class="qa-item__aText">まずは弊事務所にご相談下さい。相続財産調査の結果、相続税のご負担が予想される場合は、<br>提携税理士と二人三脚で、お客さまの税負担の最小化を見据えた相続手続きをご提案させて頂きます。</p>
-                                    </div>
-                                </div>
-                                <div class="qa-item">
-                                    <div class="qa-item__q">
-                                        <h4 class="qa-item__qHead">Q.</h4>
-                                        <p class="qa-item__qText">不動産の価値がわからないが、相続手続きを頼めば、不動産査定もお願いできますか？</p>
-                                    </div>
-                                    <div class="qa-item__a">
-                                        <h4 class="qa-item__aHead">A.</h4>
-                                        <p class="qa-item__aText">もちろんです。不動産は物理的に分けにくい財産なので、現在価値を正確に把握することが肝要です。<br>弊職は、宅地建物取引士としても活動していますので、ご要望があれば、無料で不動産査定書をお作り致します。</p>
+                                <h4 class="blog-list__itemTitle">「遂に京都市に空家税が創設されそうです。」</h4>
+                            </a>
+                        </li>
+                        <li class="blog-list">
+                            <a href="" class="blog-list__item">
+                                <div class="blog-list__itemInfo">
+                                    <p class="blog-list__itemDate">2023.05.04</p>
+                                    <div class="blog-list__itemCategory">
+                                        <p class="blog-list__itemCategoryText">お知らせ</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="qa-wrap">
-                            <h3 class="qa-wrap__title">【遺言】</h3>
-                            <div class="qa-items">
-                                <div class="qa-item">
-                                    <div class="qa-item__q">
-                                        <h4 class="qa-item__qHead">Q.</h4>
-                                        <p class="qa-item__qText">エンディングノートを作成しておけば、遺言書は不要ですか？</p>
-                                    </div>
-                                    <div class="qa-item__a">
-                                        <h4 class="qa-item__aHead">A.</h4>
-                                        <p class="qa-item__aText">エンディングノートには法的効力がないため、故人が法的効力のある遺言書を残していない場合は、相続人間での話し合い（遺産分割協議）が必須です。万一、取り分で揉めた場合は、裁判所での調停、審判の手続きに発展し、家族関係が崩壊する不幸に見舞われるリスクがあるので、次のような場合には、遺言書を残されることをお勧めいたします。<br>
-                                            ・財産分けの難しい不動産が主な相続財産である場合<br>
-                                            ・身の回りの世話や介護の負担が相続人間で極端に異なっている場合<br>
-                                            ・日頃交流のない親戚や再婚前の実子等が相続人に加わる場合<br>
-                                            ・認知症や知的障害を患った相続人を抱える場合 <br>
-                                            ・特定の人、団体等に多くあるいは少なく、遺産分けをしたい場合</p>
-                                    </div>
-                                </div>
-                                <div class="qa-item">
-                                    <div class="qa-item__q">
-                                        <h4 class="qa-item__qHead">Q.</h4>
-                                        <p class="qa-item__qText">遺言書を公正証書で作成するメリットは何ですか？</p>
-                                    </div>
-                                    <div class="qa-item__a">
-                                        <h4 class="qa-item__aHead">A.</h4>
-                                        <p class="qa-item__aText">自筆で記した遺言書は、法務局保管制度を利用すれば、紛失、改ざん、破棄のリスクは消えますが、遺言書作成時、遺言者の意思判断能力がなかったとして無効になるリスクは消えません。その点、公正証書で作成すれば、遺言書が有効となる形式的な要件を備えているのはもちろんのこと、公証人が遺言者の意思判断能力を担保してくれるので、無効になることはまずありません。大切なご家族に安心して財産をバトンタッチするためにも、遺言書は公正証書でお残しになることをお勧めいたします。</p>
-                                    </div>
-                                </div>
-                                <div class="qa-item">
-                                    <div class="qa-item__q">
-                                        <h4 class="qa-item__qHead">Q.</h4>
-                                        <p class="qa-item__qText">障害のある子供の面倒をみなけらばならないという遺言書は有効でしょうか？</p>
-                                    </div>
-                                    <div class="qa-item__a">
-                                        <h4 class="qa-item__aHead">A.</h4>
-                                        <p class="qa-item__aText">子供の面倒を誰がみるかという点は、法律で定められた遺言事項ではないので、法的な効力はありません。ただし、遺言書には、付言事項という法律行為以外のことで家族に伝えたい大切なメッセージを残すことは可能です。また、どうしても法的な効力を持たせたい場合は、負担付遺贈の形にするなどの工夫の余地はあります。</p>
-                                    </div>
-                                </div>
-                                <div class="qa-item">
-                                    <div class="qa-item__q">
-                                        <h4 class="qa-item__qHead">Q.</h4>
-                                        <p class="qa-item__qText">妻が先に亡くなってしまう場合も想定した遺言書は作れますか？</p>
-                                    </div>
-                                    <div class="qa-item__a">
-                                        <h4 class="qa-item__aHead">A.</h4>
-                                        <p class="qa-item__aText">はい、作れます。例えば、妻に1/2と息子2人に各1/4相続させる遺言書において、「万一、妻が夫より先に死亡したときは、夫が妻に相続させるとした財産を長男に相続させる」と記載しておけば、遺言書を作り直す必要はありません。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                <h4 class="blog-list__itemTitle">「繰越通帳廃棄のデメリットについて」</h4>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
-            <!-- /#qa.qa -->
+            <!-- /.blog -->
+            
 
             <footer class="footer">
                 <div class="inner footer-inner">
@@ -752,10 +823,25 @@
                             <img src="./images/arc-footer-logo.png" alt="ロゴ" class="footer-logo__img">
                         </a>
                         <h2 class="footer-name">姫路の相続・遺言書サポート窓口</h2>
+                        <div class="footer-tel">
+                            <img src="./images/arc-icon-tel-black.png" alt="電話アイコン" class="footer-tel__icon">
+                            <a href="tel:090-4288-9385" class="footer-tel__num">090-4288-9385</a>
+                        </div>
                         <h4 class="footer-place">姫路市安田三丁目93番地アバエル1F</h4>
                         <p class="footer-place__note">※事務所近くに駐車場（２台）をご用意しております。</p>
                         <a href="#" class="footer__link">事務所詳細はGoogle プロフィールへ</a>
                         <ul class="footer-distance">
+                            <li class="footer-distance__list">
+                                <div class="footer-distance__listContainer">
+                                    <p class="footer-distance__listHead">安田駅から</p>
+                                    <div class="footer-distance__listWrapper">
+                                        <div class="footer-distance__listWrap">
+                                            <img src="./images/arc-icon-bus.png" alt="アイコン" class="footer-distance__listIcon">
+                                            <p class="footer-distance__listText">徒歩1分</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="footer-distance__list">
                                 <div class="footer-distance__listContainer">
                                     <p class="footer-distance__listHead">姫路市役所から</p>
@@ -811,41 +897,6 @@
 
         </div>
         <!-- /#container -->
-
-        <nav class="mobile-menu">
-            <ul class="mobile-menu__main">
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#">
-                        <img src="./images/arc-footer-logo.png" alt="ロゴ" class="mobile-menu__logo">
-                        <!-- <span class="sub-title">サービスについて</span> -->
-                    </a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#flow">
-                        <span class="main-title">ご相談の流れ</span>
-                        <!-- <span class="sub-title">サービスについて</span> -->
-                    </a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#service">
-                        <span class="main-title">サービス</span>
-                        <!-- <span class="sub-title">私たちについて</span> -->
-                    </a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#blog">
-                        <span class="main-title">ブログ</span>
-                        <!-- <span class="sub-title">コンタクト方法</span> -->
-                    </a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#qa">
-                        <span class="main-title">よくあるご質問</span>
-                        <!-- <span class="sub-title">コンタクト方法</span> -->
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </div>
 
     <!-- jQueryライブラリ読み込みコード -->

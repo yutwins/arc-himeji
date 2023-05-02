@@ -7,7 +7,7 @@
 ・記事ページの作成
 ・各リンク先の設定
 
-・デザインを全体的に整えているので、再度チェックを行う
+・デザインを全体的に整えているので、再度細かくチェックを行う
 ・デザインカンプを整える
 
 
@@ -32,4 +32,7 @@
 <!-- 後で消すここまで -->
 
 <components>
-<a href="#" class="btn"><span class="btn__text">お問い合わせ</span></a>
+<a href="#" class="btn">
+    <img src="./images/arc-icon-mail.png" alt="メールアイコン" class="btn__icon">
+    <span class="btn__text">お問い合わせ</span>
+</a>

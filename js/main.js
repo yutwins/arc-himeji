@@ -72,13 +72,24 @@ function changeColor(hoge){
 
 //qaセクショントグル
 const qaItem = document.querySelectorAll(".qa-item");
-console.log(qaItem);
 const qaQ = document.querySelectorAll(".qa-item__q")
 const qaA = document.querySelectorAll(".qa-item__a")
+const qaWrap = document.querySelectorAll(".qa-wrap")
+console.log(qaWrap);
 
 // Add 'open' class to the first qa-item
+qaWrap[0].classList.add('open');
 qaItem[0].classList.add('open');
 
+const qaWrapClick = function() {
+  for(let i = 0; i < qaWrap.length; i++) {
+    qaWrap[i].addEventListener('click', function() {
+      this.classList.toggle('open');
+      
+      return false;
+    });
+  }
+}
 const qaQClick = function() {
   for(let i = 0; i < qaItem.length; i++) {
     qaItem[i].addEventListener('click', function() {
@@ -88,4 +99,6 @@ const qaQClick = function() {
     });
   }
 }
+
+qaWrapClick();
 qaQClick();

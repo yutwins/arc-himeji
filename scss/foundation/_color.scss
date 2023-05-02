@@ -1,16 +1,20 @@
-$primary-color: #066241;
-$secondary-color: #003E28;
-$medium-green: #7FB069;
-$accent-color: #FFEFC7;
+// Base Colors
+$primary-color: #FFF0CD;
+$secondary-color: #3B2C18;
+$medium-beige: #EBCB81;
+$pure-beige: #EEDCB3;
 $pureWhite: #FFFFFF;
-$offWhite: #F2EFEA;
 $pureBlack: #000000;
+
+$accent-color: #650000;
+$pure-brown: #6F4B3E;
+$offWhite: #F2EFEA;
 $golden: #E6AB5D;
 $gray-placeHolder: #D4D4D4;
 $gray-post: #8A8A8A;
 $gray-input-border: #BDBDBD;
-$cMenuClose: $pureWhite;
-$cMenuOpen: $pureWhite;
+$cMenuClose: $pureBlack;
+$cMenuOpen: $pureBlack;
 $cSubTitle: #535353;
 $link-color: #69AEFF;
 $required-red: #F30000;

@@ -7,8 +7,7 @@
     }
 
     &__title {
-        color: $secondary-color;
-        // white-space: nowrap;
+        color: $accent-color;
 
         @include mq("sp") {
             font-size: 1.8rem;
@@ -41,8 +40,7 @@
             margin: 20px auto 0;
 
             &:before {
-                height: 100px;
-                bottom: -5%;
+                display: none;
             }
         }
     }
@@ -57,12 +55,8 @@
         &__icon {
             display: block;
             width: auto;
-            height: 100px;
-            margin: 0 auto 12px;
-
-            @include mq("sp") {
-                height: 80px;
-            }
+            height: 128px;
+            margin: 0 auto;
         }
 
         &__headArea {
@@ -80,7 +74,7 @@
             font-size: 24px;
             line-height: 40px;
             font-weight: bold;
-            color: $pureWhite;
+            color: $accent-color;
 
             @include mq("sp") {
                 font-size: 18px;
@@ -94,10 +88,11 @@
                     content: "カタチ";
                     position: absolute;
                     top: -20px;
-                    left: 50%;
+                    left: 60%;
                     transform: translateX(-50%);
                     font-size: 12px;
                     font-weight: 500;
+                    letter-spacing: 1em;
                     white-space: nowrap;
 
                     @include mq("sp") {
@@ -116,8 +111,6 @@
             }
         }
         
-        &__textUl {
-        }
 
         &__textList {
             display: flex;
@@ -158,6 +151,10 @@
 
     &-bottom {
         padding-top: 110px;
+
+        @include mq("sp") {
+            padding-top: 60px;
+        }
 
         &__title {
             font-size: 32px;

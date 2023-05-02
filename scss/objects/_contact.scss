@@ -16,9 +16,6 @@
         }
     }
 
-    &__title {
-        color: $pureWhite;
-    }
 
     &-noteArea {
         text-align: center;
@@ -26,7 +23,7 @@
     &__note {
         position: relative;
         display: inline-block;
-        color: $pureWhite;
+        color: $accent-color;
 
         @include mq("sp") {
             font-size: 14px;
@@ -145,7 +142,7 @@
             margin: 30px auto 0;
             display: grid;
             place-items: center;
-            background-color: $accent-color;
+            background-color: $medium-beige;
             border-radius: 8px;
             box-shadow: 2px 4px 4px rgba($pureBlack, .5);
             transition: all .3s ease 0s;
@@ -160,6 +157,7 @@
             }
 
             input[type="submit"] {
+                color: $accent-color;
                 font-weight: bold;
             }
         }

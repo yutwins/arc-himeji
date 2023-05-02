@@ -14,7 +14,7 @@
     }
 
     &-left {
-        width: 50%;
+        width: 57%;
         border-right: 1px solid $pureBlack;
 
         @media (max-width: 900px) {
@@ -44,25 +44,50 @@
         margin-top: 12px;
         font-size: 24px;
         font-weight: bold;
+        color: $pureBlack;
 
         @media (max-width: 900px) {
             font-size: 18px;
         }
     }
 
+    &-tel {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        @include mq("sp") {
+            justify-content: center;
+        }
+
+        &__icon {
+           width: 26px;
+           height: auto;
+        }
+
+        &__num {
+            font-family: $ROBOTO;
+            font-size: 22px;
+            font-weight: bold;
+            color: $pureBlack;
+        }
+    }
+
     &-place {
-        margin-top: 10px;
+        margin-top: 12px;
+        font-size: 14px;
         font-weight: bold;
+        color: $pureBlack;
 
         @media (max-width: 900px) {
-            margin-top: 8px;
-            font-size: 14px;
+            margin-top: 10px;
         }
 
         &__note {
             margin-top: 6px;
             font-size: 12px;
             font-weight: 500;
+            color: $pureBlack;
         }
     }
 
@@ -101,8 +126,12 @@
             text-align: center;
         }
         &__listTagText {
-            color: $pureWhite;
+            font-weight: bold;
             line-height: 1;
+
+            @include mq("sp") {
+                font-weight: 500;
+            }
         }
 
         &__listContainer {
@@ -140,7 +169,7 @@
     }
 
     &-right {
-        width: 50%;
+        width: 40%;
         text-align: right;
 
         @media (max-width: 900px) {
