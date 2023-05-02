@@ -53,7 +53,7 @@ function my_script_init()
 
     // js
     // wp_enqueue_script('', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '1.0.0', true);
-    wp_enqueue_script("my", get_template_directory_uri() . "/js/main.js", array("jquery"), filemtime(get_theme_file_path('js/script.js')), true);
+    wp_enqueue_script("my", get_template_directory_uri() . "/js/main.js", array("jquery"), filemtime(get_theme_file_path('js/main.js')), true);
   }
     add_action('wp_enqueue_scripts', 'my_script_init');
 

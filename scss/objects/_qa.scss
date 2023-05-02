@@ -20,24 +20,7 @@
 
     &-wrap {
         height: auto;
-        max-height: 50px;
-        overflow: hidden;
-        transition: all 0.3s ease 0s;
 
-        @include mq("sp") {
-            max-height: 40px;
-        }
-
-        &.open { 
-            max-height: 10000px;
-
-            .qa-wrap__title--triangle {
-
-                &::before {
-                    transform: translateY(-50%) rotate(90deg);
-                }
-            }
-        }
 
         &:not(:first-child) {
             margin-top: 60px;
@@ -54,6 +37,16 @@
 
             @include mq("sp") {
                 padding-left: 30px;
+            }
+
+            &.open { 
+    
+                .qa-wrap__title--triangle {
+    
+                    &::before {
+                        transform: translateY(-50%) rotate(90deg);
+                    }
+                }
             }
 
             &--triangle {
@@ -87,6 +80,21 @@
 
     &-items {
         margin-top: 16px;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease 0s;
+
+        &.open { 
+            max-height: 10000px;
+
+            .qa-wrap__title--triangle {
+
+                &::before {
+                    transform: translateY(-50%) rotate(90deg);
+                }
+            }
+        }
 
         @include mq("sp") {
             margin-top: 12px;

@@ -131,6 +131,7 @@
 
             @include mq("sp") {
                 font-weight: 500;
+                font-size: 13px;
             }
         }
 
@@ -143,6 +144,10 @@
             font-size: 14px;
             font-weight: bold;
             text-align: center;
+
+            @include mq("sp") {
+                font-size: 12px;
+            }
         }
 
         &__listWrapper {
@@ -164,6 +169,10 @@
             margin-top: 10px;
             font-size: 14px;
             font-weight: bold;
+
+            @include mq("sp") {
+                font-size: 12px;
+            }
         }
 
     }

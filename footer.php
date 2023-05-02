@@ -2,19 +2,34 @@
     <div class="inner footer-inner">
         <div class="footer-left">
             <a href="#" class="footer-logo">
-                <img src="./images/arc-footer-logo.png" alt="ロゴ" class="footer-logo__img">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/arc-footer-logo.png" alt="ロゴ" class="footer-logo__img">
             </a>
             <h2 class="footer-name">姫路の相続・遺言書サポート窓口</h2>
+            <div class="footer-tel">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-tel-black.png" alt="電話アイコン" class="footer-tel__icon">
+                <a href="tel:090-4288-9385" class="footer-tel__num">090-4288-9385</a>
+            </div>
             <h4 class="footer-place">姫路市安田三丁目93番地アバエル1F</h4>
             <p class="footer-place__note">※事務所近くに駐車場（２台）をご用意しております。</p>
             <a href="#" class="footer__link">事務所詳細はGoogle プロフィールへ</a>
             <ul class="footer-distance">
                 <li class="footer-distance__list">
                     <div class="footer-distance__listContainer">
+                        <p class="footer-distance__listHead">安田駅から</p>
+                        <div class="footer-distance__listWrapper">
+                            <div class="footer-distance__listWrap">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-bus.png" alt="アイコン" class="footer-distance__listIcon">
+                                <p class="footer-distance__listText">徒歩1分</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="footer-distance__list">
+                    <div class="footer-distance__listContainer">
                         <p class="footer-distance__listHead">姫路市役所から</p>
                         <div class="footer-distance__listWrapper">
                             <div class="footer-distance__listWrap">
-                                <img src="./images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
                                 <p class="footer-distance__listText">徒歩3分</p>
                             </div>
                         </div>
@@ -28,7 +43,7 @@
                         <p class="footer-distance__listHead">手柄駅から</p>
                         <div class="footer-distance__listWrapper">
                             <div class="footer-distance__listWrap">
-                                <img src="./images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
                                 <p class="footer-distance__listText">徒歩3分</p>
                             </div>
                         </div>
@@ -42,11 +57,11 @@
                         <p class="footer-distance__listHead">姫路駅から</p>
                         <div class="footer-distance__listWrapper">
                             <div class="footer-distance__listWrap">
-                                <img src="./images/arc-icon-bus.png" alt="アイコン" class="footer-distance__listIcon">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-bus.png" alt="アイコン" class="footer-distance__listIcon">
                                 <p class="footer-distance__listText">バスで5分</p>
                             </div>
                             <div class="footer-distance__listWrap">
-                                <img src="./images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
                                 <p class="footer-distance__listText">徒歩14分</p>
                             </div>
                         </div>
@@ -67,9 +82,8 @@
 </div>
 
 <!-- jQueryライブラリ読み込みコード -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
-
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/main.js"></script> -->
 <?php wp_footer(); ?>
 </body>
 

@@ -1,11 +1,15 @@
 @use "../foundation/global" as *;
 
-.blog {
+#blog {
     margin: 120px 0;
 
     @include mq("sp") {
         background-color: $primary-color;
+        margin: 60px 0;
     }
+}
+.blog {
+
 
     &-inner {
         padding: 64px 8%;

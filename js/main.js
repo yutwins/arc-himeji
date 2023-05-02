@@ -32,11 +32,11 @@ new MobileMenu();
 
 
 //郵便番号自動
-$(document).ready(function() {
-  $("#zip").on("input", function() {
-    const zip = $(this).val();
+jQuery(document).ready(function() {
+  jQuery("#zip").on("input", function() {
+    const zip = jQuery(this).val();
     if (zip.length === 7) {
-      $.ajax({
+      jQuery.ajax({
         url: "https://zipcloud.ibsnet.co.jp/api/search",
         dataType: "jsonp",
         data: {
@@ -45,17 +45,17 @@ $(document).ready(function() {
         success: function(data) {
           if (data.status === 200) {
             const address = data.results[0].address1 + data.results[0].address2 + data.results[0].address3;
-            $("#address").val(address);
+            jQuery("#address").val(address);
           } else {
-            $("#address").val("住所が見つかりませんでした");
+            jQuery("#address").val("住所が見つかりませんでした");
           }
         },
         error: function() {
-          $("#address").val("住所の取得に失敗しました");
+          jQuery("#address").val("住所の取得に失敗しました");
         }
       });
     } else {
-      $("#address").val("");
+      jQuery("#address").val("");
     }
   });
 });
@@ -74,17 +74,21 @@ function changeColor(hoge){
 const qaItem = document.querySelectorAll(".qa-item");
 const qaQ = document.querySelectorAll(".qa-item__q")
 const qaA = document.querySelectorAll(".qa-item__a")
-const qaWrap = document.querySelectorAll(".qa-wrap")
-console.log(qaWrap);
+const qaTitle = document.querySelectorAll(".qa-wrap__title")
+const qaItems = document.querySelectorAll(".qa-items")
+console.log(qaTitle);
 
 // Add 'open' class to the first qa-item
-qaWrap[0].classList.add('open');
+qaTitle[0].classList.add('open');
+qaItems[0].classList.add('open');
 qaItem[0].classList.add('open');
 
-const qaWrapClick = function() {
-  for(let i = 0; i < qaWrap.length; i++) {
-    qaWrap[i].addEventListener('click', function() {
+const qaTitleClick = function() {
+  for(let i = 0; i < qaTitle.length; i++) {
+    qaTitle[i].addEventListener('click', function() {
+      // this.node.nextElementSibling.classList.toggle('open');
       this.classList.toggle('open');
+      this.nextElementSibling.classList.toggle('open');
       
       return false;
     });
@@ -100,5 +104,5 @@ const qaQClick = function() {
   }
 }
 
-qaWrapClick();
+qaTitleClick();
 qaQClick();
