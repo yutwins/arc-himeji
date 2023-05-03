@@ -84,6 +84,7 @@
         }
 
         &__input {
+            width: 100%;
             margin-top: 6px;
             display: flex;
             align-items: center;
@@ -162,5 +163,48 @@
             }
         }
         
+    }
+}
+
+
+// contact form 7
+.wpcf7-list-item {
+    
+    &:first-child {
+        margin: 0;
+    }
+}
+
+.wpcf7-list-item-label {
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+.contact-form__input {
+
+    & > p {
+        width: 100%;
+    }
+}
+
+.wpcf7-select {
+    width: 100%;
+    position: relative;
+    appearance: auto;
+    // color: $gray-placeHolder;
+    
+    & > option {
+
+    }
+}
+/* Contact Form 7 セレクトボックスのデフォルトオプションの色を変更 */
+#your-select {
+  
+    option {
+        color: #FF0000 !important; /* ここに希望する色のコードを入れてください */
+
+        &:first-child  {
+            color: #FF0000 !important; /* ここに希望する色のコードを入れてください */
+        }
     }
 }

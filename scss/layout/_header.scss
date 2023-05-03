@@ -19,6 +19,12 @@
     box-shadow: 0 4px 4px rgba($pureBlack, 0.25);
     background-color: $primary-color;
 
+    /* 横向きのスマホデバイスの場合に適用されるスタイル */
+    @media screen and (orientation: landscape) {
+        display: none;
+    }
+  
+
     @include mq("sp") {
         height: 70px;
     }
@@ -94,10 +100,6 @@
                 }
             }
         }
-
-        &__tel {
-
-        }
     }
 
     &-right {
@@ -130,6 +132,10 @@
         display: flex;
         align-items: center;
         gap: 8px;
+
+        &:hover {
+            opacity: .8;
+        }
         
         &__icon {
             width: 20px;
@@ -158,7 +164,7 @@
 
         &__btn {
             width: 140px;
-            height: 36px;
+            height: 42px;
         }
         &__btnText {
             font-size: 14px;

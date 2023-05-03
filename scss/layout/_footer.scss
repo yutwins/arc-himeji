@@ -56,6 +56,10 @@
         align-items: center;
         gap: 8px;
 
+        &:hover {
+            opacity: 0.7;
+        }
+
         @include mq("sp") {
             justify-content: center;
         }

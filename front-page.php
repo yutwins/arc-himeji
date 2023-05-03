@@ -27,7 +27,7 @@
             <h2 class="profile__title">お気軽にご相談ください<br>わかりやすくご説明いたします</h2>
             <h3 class="profile__subtitle">相続と不動産のプロが導く、<br class="sp-only">安心・確実な相続・遺言サポート</h3>
             <div class="profile-textArea">
-                <p class="profile__text">　アーク行政書士事務所は、兵庫県姫路市で相続・遺言でお悩みの方をサポート。「アーク」はフランス語で「虹」、「架け橋」の意味。<br>　家族の数だけ相続のカタチがあります。「虹」のように<br class="sp-only">色とりどりのご家族の想いと真摯に向き合い、お客さまの幸福な未来への懸け橋になりたいという私たちの強い想いを込めています。</p>
+                <p class="profile__text">　アーク行政書士事務所は、兵庫県姫路市で相続・遺言でお悩みの方をサポートしています。「アーク」はフランス<br class="sp-only">語で「虹」、「架け橋」を意味します。<br>　家族の数だけ相続のカタチがあります。「虹」のように<br class="sp-only">色とりどりのご家族の想いと真摯に向き合い、お客さまの幸福な未来への懸け橋になりたいという私たちの強い想いを込めています。</p>
                 <p class="profile__text">
                 　弊事務所では、行政書士・宅地建物取引士が、相続、遺言、不動産のプロとして、シニア世代のご家族の財産管理<br class="sp-only">や資産承継をサポート。ご家族への想いや大切な財産をお守りするため、常に一期一会の姿勢で寄り添い、先行きのご不安を少しでも安心に変えられるよう全力でサポートいたします。</p>
                 <p class="profile__text">
@@ -99,7 +99,7 @@
             </div>
             <div class="worried-bottom__arrow"></div>
         </div>
-        <a href="#" class="btn worried__btn">
+        <a href="<?php echo esc_url(home_url( '/' )); ?>#contact" class="btn worried__btn">
             <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-mail.png" alt="メールアイコン" class="btn__icon">
             <span class="btn__text">相談する</span>
         </a>
@@ -209,7 +209,7 @@
                     </div>
                     <figure class="flow-list__imgArea">
                         <picture>
-                            <source srcset="<?php echo get_template_directory_uri(); ?>/images/arc-flow-img04.png" media="(min-width: 768px)">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/images/arc-flow-img04.png" media="(min-width: 768px)">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/arc-flow-img04-sp.png" alt="ステップ4アイコン"  class="flow-list__img">
                         </picture>
                     </figure>
@@ -228,7 +228,7 @@
                     <figure class="flow-list__imgArea">
                         <picture>
                             <source srcset="<?php echo get_template_directory_uri(); ?>/images/arc-flow-img05.png" media="(min-width: 768px)">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/arc-flow-img05-sp.png" alt="ステップ5アイコン"  class="flow-list__img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/arc-flow-img05.png" alt="ステップ5アイコン"  class="flow-list__img">
                         </picture>
                     </figure>
                 </div>
@@ -238,7 +238,7 @@
                 </div>
             </li>
         </ol>
-        <a href="#" class="btn worried__btn">
+        <a href="<?php echo esc_url(home_url( '/' )); ?>#contact" class="btn worried__btn">
             <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-mail.png" alt="メールアイコン" class="btn__icon">
             <span class="btn__text">相談する</span>
         </a>
@@ -532,13 +532,14 @@
 </section>
 <!-- /#qa.qa -->
 
+
 <section id="contact" class="contact">
     <div class="inner contact-inner">
         <h2 class="section__title contact__title">お問い合わせ</h2>
         <div class="contact-noteArea">
             <p class="contact__note">は必須項目です</p>
         </div>
-        <form action="" class="contact-form">
+        <!-- <form action="" class="contact-form">
             <dl class="contact-form__dl">
                 <div class="contact-form__row">
                     <dt class="contact-form__label"><label for="your-entity_type">法人/ 個人</label></dt>
@@ -615,6 +616,9 @@
             <div class="contact-form__submit">
                 <input type="submit" value="送信する">
             </div>
+        </form> -->
+        <form class="contact-form">
+            <?php echo do_shortcode('[contact-form-7 id="9" title="お問い合わせ"]'); ?>
         </form>
     </div>
 </section>
@@ -623,51 +627,37 @@
 <section id="blog" class="blog">
     <div class="inner blog-inner">
         <h2 class="section__title blog__title">ブログ</h2>
+        <?php
+            $args = array(
+                'post_type'      => 'post', // 投稿タイプ
+                'posts_per_page' => 5, // 5件取得
+                'orderby'        => 'date', // 日付順に並べる
+                'order'          => 'DESC' // 降順（新しい投稿から古い投稿）
+            );
+            $the_query = new WP_Query($args);
+        ?>
+
         <ul class="blog-ul">
-            <li class="blog-list">
-                <a href="" class="blog-list__item">
-                    <div class="blog-list__itemInfo">
-                        <p class="blog-list__itemDate">2023.05.04</p>
-                        <div class="blog-list__itemCategory">
-                            <p class="blog-list__itemCategoryText">相続</p>
-                        </div>
-                    </div>
-                    <h4 class="blog-list__itemTitle">「家督相続」って？</h4>
-                </a>
-            </li>
-            <li class="blog-list">
-                <a href="" class="blog-list__item">
-                    <div class="blog-list__itemInfo">
-                        <p class="blog-list__itemDate">2023.05.04</p>
-                        <div class="blog-list__itemCategory">
-                            <p class="blog-list__itemCategoryText">相続</p>
-                        </div>
-                    </div>
-                    <h4 class="blog-list__itemTitle">生命保険照会制度のご紹介</h4>
-                </a>
-            </li>
-            <li class="blog-list">
-                <a href="" class="blog-list__item">
-                    <div class="blog-list__itemInfo">
-                        <p class="blog-list__itemDate">2023.05.04</p>
-                        <div class="blog-list__itemCategory">
-                            <p class="blog-list__itemCategoryText">お知らせ</p>
-                        </div>
-                    </div>
-                    <h4 class="blog-list__itemTitle">「遂に京都市に空家税が創設されそうです。」</h4>
-                </a>
-            </li>
-            <li class="blog-list">
-                <a href="" class="blog-list__item">
-                    <div class="blog-list__itemInfo">
-                        <p class="blog-list__itemDate">2023.05.04</p>
-                        <div class="blog-list__itemCategory">
-                            <p class="blog-list__itemCategoryText">お知らせ</p>
-                        </div>
-                    </div>
-                    <h4 class="blog-list__itemTitle">「繰越通帳廃棄のデメリットについて」</h4>
-                </a>
-            </li>
+            <?php if ($the_query->have_posts()) : ?>
+                <?php while($the_query->have_posts()) : ?>
+                    <?php $the_query->the_post(); ?>
+                    <li class="blog-list">
+                        <a href="<?php the_permalink(); ?>" class="blog-list__item">
+                            <div class="blog-list__itemInfo">
+                                <p class="blog-list__itemDate"><?php the_time('Y.m.d'); ?></p>
+                                <?php $category = get_the_category(); ?>
+                                <?php if ($category[0]) : ?>
+                                <div class="blog-list__itemCategory">
+                                    <p class="blog-list__itemCategoryText"><?php echo $category[0]->cat_name; ?></p>
+                                </div>
+                                <?php endif; ?>
+                            </div>
+                            <h4 class="blog-list__itemTitle"><?php the_title(); ?></h4>
+                        </a>
+                    </li>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); // クエリのリセット ?>
+            <?php endif; ?>
         </ul>
     </div>
 </section>

@@ -14,11 +14,14 @@
             <a href="#" class="footer__link">事務所詳細はGoogle プロフィールへ</a>
             <ul class="footer-distance">
                 <li class="footer-distance__list">
+                    <div class="footer-distance__listTag">
+                        <p class="footer-distance__listTagText">バス</p>
+                    </div>
                     <div class="footer-distance__listContainer">
-                        <p class="footer-distance__listHead">安田駅から</p>
+                        <p class="footer-distance__listHead">安田バス停から</p>
                         <div class="footer-distance__listWrapper">
                             <div class="footer-distance__listWrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-bus.png" alt="アイコン" class="footer-distance__listIcon">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
                                 <p class="footer-distance__listText">徒歩1分</p>
                             </div>
                         </div>
@@ -30,7 +33,7 @@
                         <div class="footer-distance__listWrapper">
                             <div class="footer-distance__listWrap">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
-                                <p class="footer-distance__listText">徒歩3分</p>
+                                <p class="footer-distance__listText">徒歩5分</p>
                             </div>
                         </div>
                     </div>

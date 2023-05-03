@@ -57,6 +57,19 @@ function my_script_init()
   }
     add_action('wp_enqueue_scripts', 'my_script_init');
 
+    function custom_widgets_init() {
+      register_sidebar( array(
+          'name'          => 'カスタムウィジェットエリア',
+          'id'            => 'custom_widget_area',
+          'description'   => 'カスタムウィジェットエリアです。',
+          'before_widget' => '<div id="%1$s" class="widget %2$s">',
+          'after_widget'  => '</div>',
+          'before_title'  => '<h2 class="widget-title">',
+          'after_title'   => '</h2>',
+      ) );
+  }
+  add_action( 'widgets_init', 'custom_widgets_init' );
+  
 
     // 各テンプレートごとにメイン画像を表示
 
