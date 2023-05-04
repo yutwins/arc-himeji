@@ -76,6 +76,11 @@
                         <span class="main-title">ブログ</span>
                     </a>
                 </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="<?php echo esc_url(home_url( '/' )); ?>#footer">
+                        <span class="main-title">アクセス</span>
+                    </a>
+                </li>
                 <li class="mobile-menu__item mobile-menu__item--contact">
                     <a href="tel:090-4288-9385" class="mobile-menu__link">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-telephone.png" alt="電話アイコン" class="mobile-menu__subIcon">
@@ -117,6 +122,9 @@
                             </li>
                             <li class="header-li">
                                 <a href="<?php echo esc_url(home_url( '/' )); ?>#blog" class="header-li__item">ブログ</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="<?php echo esc_url(home_url( '/' )); ?>#footer" class="header-li__item">アクセス</a>
                             </li>
                         </ul>
                     </div>

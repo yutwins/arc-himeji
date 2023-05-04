@@ -5,8 +5,8 @@
         <div class="hero-textArea">
             <h1 class="hero__title">大切な人の未来を守る、<br>あなたの相続・遺言のパートナー</h1>
             <h3 class="hero__subtitle">円満な相続を実現！<br>
-                家族の絆を大切にする相続・遺言サービス。<br>
-                相続手続きや遺言書の作成をお手伝いし、<br class="sp-only">家族間のトラブルを未然に防ぎます。</h3>
+                家族の絆を大切にする相続・遺言サービス<br>
+                相続手続きや遺言書の作成をお手伝いし、<br class="sp-only">家族間のトラブルを未然に防ぎます</h3>
         </div>
     </div>
     <div class="hero-scrollDown"><span>Scroll</span></div>
@@ -60,7 +60,7 @@
                             </li>
                             <li class="worried-upperItem__textList">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/arc-cloud-icon.png" alt="モヤモヤアイコン" class="worried-upperItem__textIcon">
-                                <p class="worried-upperItem__text">遺産分けがスムーズに済むのかとても心配</p>
+                                <p class="worried-upperItem__text">遺産分けがスムーズに進むのかとても心配</p>
                             </li>
                         </ul>
                     </div>
@@ -508,7 +508,7 @@
             </div>
             <div class="qa-wrap">
                 <h3 class="qa-wrap__title">
-                    【全般】
+                    【その他】
                 </h3>
                 <div class="qa-items">
                     <div class="qa-item">

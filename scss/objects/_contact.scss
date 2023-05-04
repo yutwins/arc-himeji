@@ -83,6 +83,20 @@
             }
         }
 
+        &__labelNote {
+            font-size: 12px;
+            font-weight: 500;
+            white-space: nowrap;
+            position: absolute;
+            top: 50%;
+            left: 120px;
+            transform: translateY(-50%);
+
+            @include mq("sp") {
+                left: 100px;
+            }
+        }
+
         &__input {
             width: 100%;
             margin-top: 6px;

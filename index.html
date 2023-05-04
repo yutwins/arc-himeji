@@ -66,13 +66,18 @@
                     </a>
                 </li>
                 <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#qa">
+                        <span class="main-title">よくあるご質問</span>
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
                     <a class="mobile-menu__link" href="#blog">
                         <span class="main-title">ブログ</span>
                     </a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#qa">
-                        <span class="main-title">よくあるご質問</span>
+                    <a class="mobile-menu__link" href="#footer">
+                        <span class="main-title">アクセス</span>
                     </a>
                 </li>
                 <li class="mobile-menu__item mobile-menu__item--contact">
@@ -117,6 +122,9 @@
                             <li class="header-li">
                                 <a href="#blog" class="header-li__item">ブログ</a>
                             </li>
+                            <li class="header-li">
+                                <a href="#footer" class="header-li__item">アクセス</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="header-right">
@@ -148,8 +156,8 @@
                     <div class="hero-textArea">
                         <h1 class="hero__title">大切な人の未来を守る、<br>あなたの相続・遺言のパートナー</h1>
                         <h3 class="hero__subtitle">円満な相続を実現！<br>
-                            家族の絆を大切にする相続・遺言サービス。<br>
-                            相続手続きや遺言書の作成をお手伝いし、<br class="sp-only">家族間のトラブルを未然に防ぎます。</h3>
+                            家族の絆を大切にする相続・遺言サービス<br>
+                            相続手続きや遺言書の作成をお手伝いし、<br class="sp-only">家族間のトラブルを未然に防ぎます</h3>
                     </div>
                 </div>
                 <div class="hero-scrollDown"><span>Scroll</span></div>
@@ -170,11 +178,12 @@
                         <h2 class="profile__title">お気軽にご相談ください<br>わかりやすくご説明いたします</h2>
                         <h3 class="profile__subtitle">相続と不動産のプロが導く、<br class="sp-only">安心・確実な相続・遺言サポート</h3>
                         <div class="profile-textArea">
-                            <p class="profile__text">　アーク行政書士事務所は、兵庫県姫路市で相続・遺言でお悩みの方をサポート。「アーク」はフランス語で「虹」、「架け橋」の意味。<br>　家族の数だけ相続のカタチがあります。「虹」のように<br class="sp-only">色とりどりのご家族の想いと真摯に向き合い、お客さまの幸福な未来への懸け橋になりたいという私たちの強い想いを込めています。</p>
+                            <p class="profile__text">　アーク行政書士事務所は、兵庫県姫路市で、行政書士・宅地建物取引士が、相続、不動産に関するご相談を取り扱っている事務所です。</p>
                             <p class="profile__text">
-                            　弊事務所では、行政書士・宅地建物取引士が、相続、遺言、不動産のプロとして、シニア世代のご家族の財産管理<br class="sp-only">や資産承継をサポート。ご家族への想いや大切な財産をお守りするため、常に一期一会の姿勢で寄り添い、先行きのご不安を少しでも安心に変えられるよう全力でサポートいたします。</p>
+                                　皆さまの幸せな未来へ繋がる「架け橋」となり、相続を円滑に進めるための財産管理や資産承継を全力でサポートいたします。<br>
+                                また、不動産の売却、査定、活用などのお悩みも承っております。</p>
                             <p class="profile__text">
-                            　不動産についてのお悩みがあれば、活用、売却、査定などのご相談も承りますので、是非お気軽にご相談下さい。</p>
+                                　是非、お気軽にご相談ください。</p>
                         </div>
                     </div>
                 </div>
@@ -203,7 +212,7 @@
                                         </li>
                                         <li class="worried-upperItem__textList">
                                             <img src="./images/arc-cloud-icon.png" alt="モヤモヤアイコン" class="worried-upperItem__textIcon">
-                                            <p class="worried-upperItem__text">遺産分けがスムーズに済むのかとても心配</p>
+                                            <p class="worried-upperItem__text">遺産分けがスムーズに進むのかとても心配</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -727,9 +736,14 @@
                                         placeholder="000-0000-000" required></dd>
                             </div>
                             <div class="contact-form__row">
-                                <dt class="contact-form__label"><label for="your-zip">郵便番号<span class="require-label"></span></label></dt>
+                                <dt class="contact-form__label">
+                                    <label for="your-zip">
+                                        郵便番号<span class="require-label"></span>
+                                        <p class="contact-form__labelNote">※半角入力でお願いします</p>
+                                    </label>
+                                </dt>
                                 <dd class="contact-form__input">
-                                    <input id="your-zip" type="text" placeholder="山田 太郎" maxlength="7" required>
+                                    <input id="your-zip" type="text" placeholder="000-0000" maxlength="7" required>
                                 </dd>
                             </div>
                             <div class="contact-form__row">
@@ -823,7 +837,7 @@
             <!-- /.blog -->
             
 
-            <footer class="footer">
+            <footer id="footer" class="footer">
                 <div class="inner footer-inner">
                     <div class="footer-left">
                         <a href="#" class="footer-logo">
@@ -837,76 +851,67 @@
                         <h4 class="footer-place">姫路市安田三丁目93番地アバエル1F</h4>
                         <p class="footer-place__note">※事務所近くに駐車場（２台）をご用意しております。</p>
                         <a href="#" class="footer__link">事務所詳細はGoogle プロフィールへ</a>
-                        <ul class="footer-distance">
-                            <li class="footer-distance__list">
-                                <div class="footer-distance__listTag">
-                                    <p class="footer-distance__listTagText">バス</p>
+                        <div class="footer-accesses">
+                            <div class="footer-access">
+                                <div class="footer-access__tag">
+                                    <p class="footer-access__tagText">電車をご利用の場合</p>
                                 </div>
-                                <div class="footer-distance__listContainer">
-                                    <p class="footer-distance__listHead">安田バス停から</p>
-                                    <div class="footer-distance__listWrapper">
-                                        <div class="footer-distance__listWrap">
-                                            <img src="./images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
-                                            <p class="footer-distance__listText">徒歩1分</p>
-                                        </div>
-                                    </div>
+                                <figure class="footer-access__iconArea">
+                                    <img src="./images/arc-icon-train.png" alt="電車アイコン" class="footer-access__icon">
+                                </figure>
+                                <ul class="footer-access__ul">
+                                    <li class="footer-access__li">JR姫路駅下車、南出口から南へ徒歩15分</li>
+                                    <li class="footer-access__li">山陽電車手柄駅下車 東へ徒歩3分</li>
+                                    <li class="footer-access__li">姫路駅（南口）南21乗り場より3分<br>安田バス停下車 西へ徒歩1分</li>
+                                </ul>
+                            </div>
+                            <div class="footer-access">
+                                <div class="footer-access__tag">
+                                    <p class="footer-access__tagText">お車をご利用の場合</p>
                                 </div>
-                            </li>
-                            <li class="footer-distance__list">
-                                <div class="footer-distance__listContainer">
-                                    <p class="footer-distance__listHead">姫路市役所から</p>
-                                    <div class="footer-distance__listWrapper">
-                                        <div class="footer-distance__listWrap">
-                                            <img src="./images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
-                                            <p class="footer-distance__listText">徒歩3分</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="footer-distance__list">
-                                <div class="footer-distance__listTag">
-                                    <p class="footer-distance__listTagText">山陽電鉄</p>
-                                </div>
-                                <div class="footer-distance__listContainer">
-                                    <p class="footer-distance__listHead">手柄駅から</p>
-                                    <div class="footer-distance__listWrapper">
-                                        <div class="footer-distance__listWrap">
-                                            <img src="./images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
-                                            <p class="footer-distance__listText">徒歩3分</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="footer-distance__list">
-                                <div class="footer-distance__listTag">
-                                    <p class="footer-distance__listTagText">JR</p>
-                                </div>
-                                <div class="footer-distance__listContainer">
-                                    <p class="footer-distance__listHead">姫路駅から</p>
-                                    <div class="footer-distance__listWrapper">
-                                        <div class="footer-distance__listWrap">
-                                            <img src="./images/arc-icon-bus.png" alt="アイコン" class="footer-distance__listIcon">
-                                            <p class="footer-distance__listText">バスで5分</p>
-                                        </div>
-                                        <div class="footer-distance__listWrap">
-                                            <img src="./images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
-                                            <p class="footer-distance__listText">徒歩14分</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                                <figure class="footer-access__iconArea">
+                                    <img src="./images/arc-icon-car.png" alt="車アイコン" class="footer-access__icon">
+                                </figure>
+                                <ul class="footer-access__ul">
+                                    <li class="footer-access__li">姫路バイパス姫路南IC下車　北方向へ約3分</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="footer-right">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.499685889783!2d134.68108367623665!3d34.81852707287808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e06707e94eb1%3A0x1879926c1bd9d7f7!2z44CSNjcwLTA5NTUg5YW15bqr55yM5aer6Lev5biC5a6J55Sw77yT5LiB55uu77yZ77yT!5e0!3m2!1sja!2sjp!4v1682904889735!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>                
-                <p class="footer-copyright">Copyright©  姫路の相続・遺言書作成サポート窓口 All Rights Reserved.</p>
+                <p class="footer-copyright">Copyright©  姫路の相続・遺言書サポート窓口 All Rights Reserved.</p>
             </footer>
             <!-- /.footer -->
 
         </div>
         <!-- /#container -->
+        <div class="cta">
+            <div class="cta-inner">
+                <ul class="cta-ul">
+                    <li class="cta-li">
+                        <a href="tel:090-4288-9385" class="cta-item">
+                            <img src="./images/arc-icon-telephone.png" alt="電話アイコン" class="cta-item__icon">
+                            <p class="cta-item__text">電話をかける</p>
+                        </a>
+                    </li>
+                    <li class="cta-li">
+                        <a href="#contact" class="cta-item">
+                            <img src="./images/arc-icon-mail-beige.png" alt="メールアイコン" class="cta-item__icon">
+                            <p class="cta-item__text">メールを送る</p>
+                        </a>
+                    </li>
+                    <li class="cta-li">
+                        <a href="https://lin.ee/gDSsRGq" class="cta-item">
+                            <img src="./images/arc-icon-line.png" alt="LINEアイコン" class="cta-item__icon">
+                            <p class="cta-item__text">LINEを送る</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <!-- jQueryライブラリ読み込みコード -->

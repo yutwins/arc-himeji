@@ -199,6 +199,78 @@
 
     }
 
+    &-accesses {
+        margin-top: 24px;
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+
+        @include mq("sp") {
+            display: block;
+        }
+    }
+    &-access {
+        text-align: center;
+
+        @include mq("sp") {
+            
+            &:nth-child(2) {
+                margin-top: 24px;
+            }
+        }
+
+        &__tag {
+            display: inline-block;
+            padding: 2px 12px;
+            background-color: $primary-color;
+            border-radius: 10px;
+        }
+        &__tagText {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        &__iconArea {
+            margin: 8px auto 0;
+        }
+        &__icon {
+            width: 45px;
+            height: auto;
+        }
+
+        &__ul {
+            margin-top: 12px;
+            text-align: left;
+
+            @include mq("sp") {
+                max-width: 260px;
+                margin: 12px auto;
+            }
+        }
+
+        &__li {
+            font-size: 12px;
+            padding-left: 10px;
+            position: relative;
+
+            &:not(:first-child) {
+                margin-top: 8px;
+            }
+
+            &::before {
+                content: "";
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                position: absolute;
+                top: 10px;
+                left: 0;
+                transform: translateY(-50%);
+                background-color: $pureBlack;
+            }
+        }
+    }
+
     &-right {
         width: 40%;
         text-align: right;
@@ -206,7 +278,7 @@
         @media (max-width: 900px) {
             width: 100%;
             max-width: 350px;
-            margin: 20px auto 0;
+            margin: 32px auto 0;
             text-align: center;
         }
 
@@ -234,4 +306,58 @@
         }
     }
 
+}
+
+.cta {
+    display: none;
+    width: 100%;
+    height: 70px;
+    // background-color: #fff;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    @include mq("sp") {
+        display: block;
+    }
+
+    &-inner {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    &-ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &-li {
+        width: 30%;
+    }
+    
+    &-item {
+        background-color: $pureWhite;
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 4px 0;
+        text-align: center;
+
+        &__icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        &__text {
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
 }

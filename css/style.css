@@ -143,6 +143,11 @@ p {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
+@media (max-width: 767px) {
+  #container {
+    margin-bottom: 70px;
+  }
+}
 
 .header {
   width: 100%;
@@ -438,7 +443,7 @@ p {
   margin-left: 16px;
   font-size: 18px;
   font-weight: bold;
-  color: #3B2C18;
+  color: #650000;
 }
 
 .menu-open #container {
@@ -509,6 +514,10 @@ p {
 .menu-open .mobile-menu__item:nth-child(8) {
   -webkit-transition-delay: 0.56s;
           transition-delay: 0.56s;
+}
+.menu-open .mobile-menu__item:nth-child(9) {
+  -webkit-transition-delay: 0.63s;
+          transition-delay: 0.63s;
 }
 
 .main-title {
@@ -738,6 +747,78 @@ p {
     font-size: 12px;
   }
 }
+.footer-accesses {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 40px;
+}
+@media (max-width: 767px) {
+  .footer-accesses {
+    display: block;
+  }
+}
+.footer-access {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .footer-access:nth-child(2) {
+    margin-top: 24px;
+  }
+}
+.footer-access__tag {
+  display: inline-block;
+  padding: 2px 12px;
+  background-color: #FFF0CD;
+  border-radius: 10px;
+}
+.footer-access__tagText {
+  font-size: 12px;
+  font-weight: bold;
+}
+.footer-access__iconArea {
+  margin: 8px auto 0;
+}
+.footer-access__icon {
+  width: 45px;
+  height: auto;
+}
+.footer-access__ul {
+  margin-top: 12px;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .footer-access__ul {
+    max-width: 260px;
+    margin: 12px auto;
+  }
+}
+.footer-access__li {
+  font-size: 12px;
+  padding-left: 10px;
+  position: relative;
+}
+.footer-access__li:not(:first-child) {
+  margin-top: 8px;
+}
+.footer-access__li::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #000000;
+}
 .footer-right {
   width: 40%;
   text-align: right;
@@ -746,7 +827,7 @@ p {
   .footer-right {
     width: 100%;
     max-width: 350px;
-    margin: 20px auto 0;
+    margin: 32px auto 0;
     text-align: center;
   }
 }
@@ -772,6 +853,64 @@ p {
   .footer-copyright {
     font-size: 10px;
   }
+}
+
+.cta {
+  display: none;
+  width: 100%;
+  height: 70px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+@media (max-width: 767px) {
+  .cta {
+    display: block;
+  }
+}
+.cta-inner {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.cta-ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.cta-li {
+  width: 30%;
+}
+.cta-item {
+  background-color: #FFFFFF;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 4px 0;
+  text-align: center;
+}
+.cta-item__icon {
+  width: 20px;
+  height: 20px;
+}
+.cta-item__text {
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .hero {
@@ -994,7 +1133,7 @@ p {
   text-decoration: none;
 }
 .profile-right {
-  width: 62.7%;
+  width: 64.7%;
 }
 @media (max-width: 767px) {
   .profile-right {
@@ -1049,6 +1188,7 @@ p {
 .profile__text {
   font-size: 18px;
   font-weight: 500;
+  line-height: 1.66;
 }
 .profile__text:not(:first-child) {
   margin-top: 10px;
@@ -1061,6 +1201,7 @@ p {
 @media (min-width: 768px) and (max-width: 1079px) {
   .profile__text {
     font-size: 16px;
+    line-height: 1.5;
   }
 }
 @media (max-width: 767px) {
@@ -2007,6 +2148,21 @@ p {
           transform: translateY(-50%);
   background-color: #F30000;
   border-radius: 50%;
+}
+.contact-form__labelNote {
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 120px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+  .contact-form__labelNote {
+    left: 100px;
+  }
 }
 .contact-form__input {
   width: 100%;
