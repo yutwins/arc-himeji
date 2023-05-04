@@ -67,13 +67,13 @@
                     </a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="<?php echo esc_url(home_url( '/' )); ?>#blog">
-                        <span class="main-title">ブログ</span>
+                    <a class="mobile-menu__link" href="<?php echo esc_url(home_url( '/' )); ?>#qa">
+                        <span class="main-title">よくあるご質問</span>
                     </a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="<?php echo esc_url(home_url( '/' )); ?>#qa">
-                        <span class="main-title">よくあるご質問</span>
+                    <a class="mobile-menu__link" href="<?php echo esc_url(home_url( '/' )); ?>#blog">
+                        <span class="main-title">ブログ</span>
                     </a>
                 </li>
                 <li class="mobile-menu__item mobile-menu__item--contact">
@@ -113,10 +113,10 @@
                                 <a href="<?php echo esc_url(home_url( '/' )); ?>#service" class="header-li__item">サービス & 料金</a>
                             </li>
                             <li class="header-li">
-                                <a href="<?php echo esc_url(home_url( '/' )); ?>#blog" class="header-li__item">ブログ</a>
+                                <a href="<?php echo esc_url(home_url( '/' )); ?>#qa" class="header-li__item">よくあるご質問</a>
                             </li>
                             <li class="header-li">
-                                <a href="<?php echo esc_url(home_url( '/' )); ?>#qa" class="header-li__item">よくあるご質問</a>
+                                <a href="<?php echo esc_url(home_url( '/' )); ?>#blog" class="header-li__item">ブログ</a>
                             </li>
                         </ul>
                     </div>

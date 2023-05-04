@@ -40,6 +40,10 @@
         font-size: 18px;
         font-weight: bold;
         color: $gray-post;
+
+        @include mq("sp") {
+            margin-top: 12px;
+        }
     }
     &__name {
         font-size: 20px;

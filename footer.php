@@ -18,11 +18,11 @@
                         <p class="footer-distance__listTagText">バス</p>
                     </div>
                     <div class="footer-distance__listContainer">
-                        <p class="footer-distance__listHead">安田バス停から</p>
+                        <p class="footer-distance__listHead">姫路駅から</p>
                         <div class="footer-distance__listWrapper">
                             <div class="footer-distance__listWrap">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
-                                <p class="footer-distance__listText">徒歩1分</p>
+                                <p class="footer-distance__listText">安田バス停下車<br class="sp-only">徒歩1分</p>
                             </div>
                         </div>
                     </div>
@@ -60,10 +60,6 @@
                         <p class="footer-distance__listHead">姫路駅から</p>
                         <div class="footer-distance__listWrapper">
                             <div class="footer-distance__listWrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-bus.png" alt="アイコン" class="footer-distance__listIcon">
-                                <p class="footer-distance__listText">バスで5分</p>
-                            </div>
-                            <div class="footer-distance__listWrap">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-walking.png" alt="アイコン" class="footer-distance__listIcon">
                                 <p class="footer-distance__listText">徒歩14分</p>
                             </div>
@@ -83,10 +79,6 @@
 </div>
 <!-- /#container -->
 </div>
-
-<!-- jQueryライブラリ読み込みコード -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="./js/main.js"></script> -->
 <?php wp_footer(); ?>
 </body>
 
