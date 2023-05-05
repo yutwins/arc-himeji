@@ -12,13 +12,10 @@
         padding: 60px 0;
 
         @include mq("sp") {
-            padding: 30px 0;
+            padding: 50px 0;
         }
     }
 
-    &__title {
-        color: $pureWhite;
-    }
 
     &-noteArea {
         text-align: center;
@@ -26,7 +23,7 @@
     &__note {
         position: relative;
         display: inline-block;
-        color: $pureWhite;
+        color: $accent-color;
 
         @include mq("sp") {
             font-size: 14px;
@@ -86,7 +83,22 @@
             }
         }
 
+        &__labelNote {
+            font-size: 12px;
+            font-weight: 500;
+            white-space: nowrap;
+            position: absolute;
+            top: 50%;
+            left: 120px;
+            transform: translateY(-50%);
+
+            @include mq("sp") {
+                left: 100px;
+            }
+        }
+
         &__input {
+            width: 100%;
             margin-top: 6px;
             display: flex;
             align-items: center;
@@ -145,7 +157,7 @@
             margin: 30px auto 0;
             display: grid;
             place-items: center;
-            background-color: $accent-color;
+            background-color: $medium-beige;
             border-radius: 8px;
             box-shadow: 2px 4px 4px rgba($pureBlack, .5);
             transition: all .3s ease 0s;
@@ -160,9 +172,53 @@
             }
 
             input[type="submit"] {
+                color: $accent-color;
                 font-weight: bold;
             }
         }
         
+    }
+}
+
+
+// contact form 7
+.wpcf7-list-item {
+    
+    &:first-child {
+        margin: 0;
+    }
+}
+
+.wpcf7-list-item-label {
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+.contact-form__input {
+
+    & > p {
+        width: 100%;
+    }
+}
+
+.wpcf7-select {
+    width: 100%;
+    position: relative;
+    appearance: auto;
+    // color: $gray-placeHolder;
+    
+    & > option {
+
+    }
+}
+/* Contact Form 7 セレクトボックスのデフォルトオプションの色を変更 */
+#your-select {
+  
+    option {
+        color: #FF0000 !important; /* ここに希望する色のコードを入れてください */
+
+        &:first-child  {
+            color: #FF0000 !important; /* ここに希望する色のコードを入れてください */
+        }
     }
 }

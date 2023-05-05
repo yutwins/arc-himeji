@@ -45,7 +45,7 @@
     &__title {
         font-size: 40px;
         font-weight: 900;
-        color: $primary-color;
+        color: $accent-color;
 
         @include mq("sp") {
             font-size: 22px;
@@ -91,7 +91,7 @@
             position: absolute;
             bottom: 10px;
             width:1px;
-            background-color: $offWhite;
+            background-color: $secondary-color;
         }
         &::before {
             right: 14px;
@@ -108,7 +108,7 @@
             left: 50%;
             top: 15px;
             transform: translateX(-50%);
-            color: $offWhite;
+            color: $secondary-color;
             font-size: 0.7rem;
             letter-spacing: 0.05em;
             /*縦書き設定*/

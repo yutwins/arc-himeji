@@ -3,15 +3,11 @@
 .service {
 
     &-inner {
-        padding: 120px 0;
+        padding-top: 120px;
 
         @include mq("sp") {
             padding: 60px 0;
         }
-    }
-
-    &__title {
-        color: $secondary-color;
     }
 
     &-wrapper {
@@ -110,7 +106,6 @@
         &__titleArea {
             height: 55%;
             background-color: $primary-color;
-            color: $pureWhite;
         }
         &__priceArea {
             height: 45%;
@@ -119,6 +114,9 @@
                 display: grid;
                 place-items: center;
             }
+        }
+        &__title {
+            color: $accent-color;
         }
         &__title,
         &__price {

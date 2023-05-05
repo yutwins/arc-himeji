@@ -25,9 +25,11 @@ $breakpoints: (
 }
 
 .btn {
-    display: grid;
-    place-items: center;
-    background-color: $accent-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: $medium-beige;
     border-radius: 8px;
     box-shadow: 2px 4px 4px rgba($pureBlack, .5);
     transition: all .3s ease 0s;
@@ -37,10 +39,16 @@ $breakpoints: (
         box-shadow: none;
     }
 
+    &__icon {
+        width: 20px;
+        height: auto;
+    }
+
     &__text {
-        color: $pureBlack;
+        color: $accent-color;
         font-weight: 500;
     }
+
 }
 
 .pc-only {
@@ -62,6 +70,7 @@ $breakpoints: (
     font-size: 48px;
     font-weight: 900;
     text-align: center;
+    color: $accent-color;
 
     @include mq("tab") {
         font-size: 42px;

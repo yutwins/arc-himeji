@@ -11,10 +11,6 @@
         }
     }
 
-    &__title {
-        color: $secondary-color;
-    }
-
     &-ol {
         width: 100%;
         max-width: 850px;
@@ -80,7 +76,7 @@
             position: absolute;
             top: 30px;
             left: 0;
-            background-color: $primary-color;
+            background-color: $pure-beige;
             border-radius: 50%;
 
             @media (max-width: 1080px) {
@@ -92,7 +88,7 @@
             font-family: $ROBOTO;
             font-size: 48px;
             font-weight: 900;
-            color: $offWhite;
+            color: $pureWhite;
 
             @media (max-width: 1080px) {
                 font-size: 42px;

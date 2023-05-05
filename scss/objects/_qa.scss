@@ -3,15 +3,11 @@
 .qa {
 
     &-inner {
-        padding: 120px 0;
+        padding-top: 120px;
 
         @include mq("sp") {
             padding: 60px 0;
         }
-    }
-
-    &__title {
-
     }
 
     &-wrapper {
@@ -19,10 +15,13 @@
 
         @include mq("sp") {
             margin-top: 32px;
+            max-width: 350px;
+            margin: 32px auto 0;
         }
     }
 
     &-wrap {
+        height: auto;
 
         &:not(:first-child) {
             margin-top: 60px;
@@ -35,15 +34,56 @@
         &__title {
             font-size: 24px;
             font-weight: bold;
-
-            @include mq("sp") {
-                font-size: 20px;
+            padding-left: 40px;
+            cursor: pointer;
+            position: relative;
+    
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 15px 0 15px 30px;
+                border-color: transparent transparent transparent $secondary-color;
+                transition: all 0.3s ease 0s;
             }
+            
+            @include mq("sp") {
+                padding-left: 30px;
+                font-size: 20px;
+
+                &::before {
+                    border-width: 10px 0 10px 20px;
+                }
+            }
+
+            &.open { 
+    
+                &::before {
+                    transform: translateY(-50%) rotate(90deg);
+                }
+                
+            }
+
         }
+        
     }
 
     &-items {
         margin-top: 16px;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease 0s;
+
+        &.open { 
+            max-height: 10000px;
+        }
 
         @include mq("sp") {
             margin-top: 12px;
@@ -57,7 +97,7 @@
         transition: all 0.3s ease 0s;
 
         @include mq("sp") {
-            max-height: 85px;
+            max-height: 60px;
         }
 
         &.open {
@@ -72,7 +112,7 @@
             margin-top: 24px;
 
             @include mq("sp") {
-                margin-top: 0;
+                margin-top: 20px;
             }
         }
 
@@ -83,19 +123,22 @@
             gap: 14px;
             padding: 6px 12px;
             height: auto;
+
+            @include mq("sp") {
+                gap: 12px;
+            }
         }
         &__q {
-            background-color: $medium-green;
-            color: $pureWhite;
+            background-color: $primary-color;
+            color: $pure-brown;
             position: relative;
             z-index: 2;
+            cursor: pointer;
         }
         &__qHead,
         &__aHead {
             font-size: 24px;
             line-height: 1;
-        }
-        &__qHead {
         }
         &__qText,
         &__aText {
@@ -116,6 +159,7 @@
         }
         &__aText {
             font-weight: bold;
+            color: $pureBlack;
         }
     }
 }
