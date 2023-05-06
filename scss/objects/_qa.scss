@@ -2,6 +2,7 @@
 
 .qa {
 
+
     &-inner {
         padding-top: 120px;
 
@@ -11,17 +12,66 @@
     }
 
     &-wrapper {
+        width: 100%;
         margin-top: 64px;
+        padding: 32px;
+        background-color: $primary-color;
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+
+        &::before,
+        &::after {
+            position: absolute;
+        }
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: $primary-color;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        &::after {
+            content: "Q & A";
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 200px;
+            font-weight: 900;
+            color: $medium-beige;
+            color: $pure-beige;
+            font-family: $ROBOTO;
+            white-space: nowrap;
+
+            @include mq("tab") {
+                font-size: 140px;
+            }
+            @include mq("sp") {
+                font-size: 90px;
+            }
+        }
+
 
         @include mq("sp") {
-            margin-top: 32px;
-            max-width: 350px;
-            margin: 32px auto 0;
+            padding: 24px 12px;
+            width: 100vw;
+            margin: 32px calc(50% - 50vw) 0;
+            border-radius: 0;
         }
     }
 
     &-wrap {
         height: auto;
+        position: relative;
+        z-index: 2;
+        transition: all 0.3s ease 0s;
+
+        &.open {
+            backdrop-filter: blur(10px);
+        }
 
         &:not(:first-child) {
             margin-top: 60px;
@@ -75,14 +125,14 @@
     }
 
     &-items {
-        margin-top: 16px;
         height: auto;
         max-height: 0;
         overflow: hidden;
         transition: all 0.3s ease 0s;
-
+        
         &.open { 
             max-height: 10000px;
+            margin-top: 16px;
         }
 
         @include mq("sp") {
@@ -97,7 +147,7 @@
         transition: all 0.3s ease 0s;
 
         @include mq("sp") {
-            max-height: 60px;
+            max-height: 80px;
         }
 
         &.open {
@@ -105,6 +155,7 @@
 
             .qa-item__a {
                 transform: translateY(0);
+                background-color: $pureWhite;
             }
         }
 
@@ -116,7 +167,7 @@
             }
         }
 
-        &__q,
+        &__qContainer,
         &__a {
             display: flex;
             align-items: flex-start;
@@ -134,6 +185,14 @@
             position: relative;
             z-index: 2;
             cursor: pointer;
+            background-color: $medium-beige;
+
+            @include mq("sp") {
+                height: 80px;
+                display: grid;
+                place-items: center;
+                padding: 0;
+            }
         }
         &__qHead,
         &__aHead {
@@ -148,10 +207,9 @@
                 font-size: 14px;
             }
         }
-
         &__a {
-            margin-top: 10px;
-            transform: translateY(-110%);
+            padding-top: 16px;
+            transform: translateY(-150%);
             transition: all 0.3s ease 0s;
         }
         &__aHead {
@@ -159,7 +217,6 @@
         }
         &__aText {
             font-weight: bold;
-            color: $pureBlack;
         }
     }
 }

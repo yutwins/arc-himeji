@@ -1,0 +1,115 @@
+@use "../foundation/global" as *;
+
+.voice {
+
+    &-inner {
+        padding-top: 120px;
+
+        @include mq("sp") {
+            padding: 60px 0;
+        }
+    }
+
+
+    &-ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+
+        @include mq("sp") {
+            display: block;
+            margin-top: 32px;
+        }
+    }
+
+    &-list {
+        width: 45%;
+        height: auto;
+        min-height: 390px;
+        padding: 30px 20px;
+        background-color: $primary-color;
+        border-radius: 12px;
+
+        @include mq("tab") {
+            width: 47%;
+        }
+
+        @include mq("sp") {
+            width: 100%;
+            max-width: 350px;
+            min-height: initial;
+            margin: 0 auto;
+            padding: 20px 12px;
+
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+
+        &__head {
+            display: flex;
+            padding-bottom: 18px;
+            align-items: center;
+            border-bottom: 1px solid $secondary-color;
+
+            @include mq("sp") {
+                padding-bottom: 12px;
+            }
+        }
+
+        &__headLeft,
+        &__headRight {
+            text-align: center;
+        }
+        &__headLeft {
+            width: 50%;
+        }
+        &__headImg {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+
+            @include mq("sp") {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        &__headRight {
+            font-weight: bold;
+        }
+        &__headName {
+            font-size: 24px;
+
+            @include mq("sp") {
+                font-size: 20px;
+            }
+        }
+        &__headAge {
+            margin-top: 20px;
+            font-size: 20px;
+
+            @include mq("sp") {
+                margin-top: 14px;
+                font-size: 16px;
+            }
+        }
+
+        &__textArea {
+            padding-top: 18px;
+
+            @include mq("sp") {
+                padding-top: 12px;
+            }
+        }
+        &__text {
+            font-weight: 500;
+
+            @media (max-width: 1080px) {
+                font-size: 14px;
+            }
+        }
+
+    }
+}

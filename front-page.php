@@ -384,13 +384,52 @@
                     </div>
                 </div>
             </div>
-            <p class="service-wrapper__note">※税、手数料、郵便代、旅費などの実費は別途ご負担願います</p>
+            <p class="service-wrapper__note">※税、手数料、郵便代、交通費などの実費は別途ご負担願います</p>
         </div>
     </div>
 </section>
 <!-- /.service -->
 
-<section class="voice"></section>
+<section class="voice">
+    <div class="inner voice-inner">
+        <h2 class="section__title voice__title">お客様からの声</h2>
+        <ul class="voice-ul">
+
+        <?php 
+            $args = array(
+                'posts_per_page' => 2, //取得する投稿数
+                'post_type' => 'post', // 投稿タイプ
+                'post_status' => 'publish', // 公開された投稿のみ
+                'tag' => 'pickup' // pickupタグがついた投稿のみ
+            );
+
+            $posts = get_posts( $args );
+            foreach ( $posts as $post ) : setup_postdata( $post );
+        ?>
+            <li class="voice-list">
+                <div class="voice-list__head">
+                    <div class="voice-list__headLeft">
+                        <img src="<?php echo CFS()->get('userImg');?>" alt="お客様画像" class="voice-list__headImg">
+                    </div>
+                    <div class="voice-list__headRight">
+                        <p class="voice-list__headName"><?php echo CFS()->get('name');?></p>
+                        <p class="voice-list__headAge"><?php echo CFS()->get('age');?></p>
+                    </div>
+                </div>
+                <div class="voice-list__textArea">
+                    <p class="voice-list__text">
+                    <?php echo CFS()->get('text');?>
+                    </p>
+                </div>
+            </li>
+            <?php
+            endforeach;
+
+            wp_reset_postdata();
+            ?>
+        </ul>
+    </div>
+</section>
 <!-- /.voice -->
 
 <section id="qa" class="qa">
@@ -404,18 +443,22 @@
                 <div class="qa-items">
                     <div class="qa-item">
                         <div class="qa-item__q">
-                            <h4 class="qa-item__qHead">Q.</h4>
-                            <p class="qa-item__qText">不動産の相続登記ができていないが、相談や手続きは可能ですか？</p>
+                            <div class="qa-item__qContainer">
+                                <h4 class="qa-item__qHead">Q.</h4>
+                                <p class="qa-item__qText">突然のことで何から手を付けていいのかわからないです。</p>
+                            </div>
                         </div>
                         <div class="qa-item__a">
                             <h4 class="qa-item__aHead">A.</h4>
-                            <p class="qa-item__aText">まずは弊事務所にご相談下さい。遺言書や遺産分割協議書の有無等により手続きは異なります。弊事務所が個々の事案に応じた手続きをご案内いたしますので、安心してお任せください。</p>
+                            <p class="qa-item__aText">相続手続きは、一生のうちに何回も経験することではないので、わからないのが当たり前です。<br>また、遺言書の有無、相続財産の内容、相続人様の人数や年齢等によって、その手続きは異なります。<br>弊事務所では、ご相談者様がご納得されるまで、わかりやすく丁寧なご説明に努めさせて頂いておりますので、<br class="pc-only">安心してお申し付け下さい。</p>
                         </div>
                     </div>
                     <div class="qa-item">
                         <div class="qa-item__q">
-                            <h4 class="qa-item__qHead">Q.</h4>
-                            <p class="qa-item__qText">遠方に住んでいますが、兵庫県内の実家の相続手続きをお願いできますか？</p>
+                            <div class="qa-item__qContainer">
+                                <h4 class="qa-item__qHead">Q.</h4>
+                                <p class="qa-item__qText">遠方に住んでいますが、兵庫県内の実家の相続手続きをお願いできますか？</p>
+                            </div>
                         </div>
                         <div class="qa-item__a">
                             <h4 class="qa-item__aHead">A.</h4>
@@ -424,32 +467,38 @@
                     </div>
                     <div class="qa-item">
                         <div class="qa-item__q">
-                            <h4 class="qa-item__qHead">Q.</h4>
-                            <p class="qa-item__qText">突然のことで何から手を付けていいのかわからないです。</p>
-                        </div>
-                        <div class="qa-item__a">
-                            <h4 class="qa-item__aHead">A.</h4>
-                            <p class="qa-item__aText">相続手続きは、一生のうちに何回も経験することではないので、わからないのが当たり前です。<br>また、遺言書の有無、相続財産の内容、相続人様の人数や年齢等によって、その手続きは異なります。<br>弊事務所では、ご相談者様がご納得されるまで、わかりやすく丁寧なご説明に努めさせて頂いておりますので、<br>安心してお申し付け下さい。</p>
-                        </div>
-                    </div>
-                    <div class="qa-item">
-                        <div class="qa-item__q">
-                            <h4 class="qa-item__qHead">Q.</h4>
-                            <p class="qa-item__qText">相続税がかかりそうな相続手続きでもお願いできますか？</p>
-                        </div>
-                        <div class="qa-item__a">
-                            <h4 class="qa-item__aHead">A.</h4>
-                            <p class="qa-item__aText">まずは弊事務所にご相談下さい。相続財産調査の結果、相続税のご負担が予想される場合は、<br>提携税理士と二人三脚で、お客さまの税負担の最小化を見据えた相続手続きをご提案させて頂きます。</p>
-                        </div>
-                    </div>
-                    <div class="qa-item">
-                        <div class="qa-item__q">
-                            <h4 class="qa-item__qHead">Q.</h4>
-                            <p class="qa-item__qText">不動産の価値がわからないが、相続手続きを頼めば、不動産査定もお願いできますか？</p>
+                            <div class="qa-item__qContainer">
+                                <h4 class="qa-item__qHead">Q.</h4>
+                                <p class="qa-item__qText">不動産の価値がわからないが、相続手続きを頼めば、不動産査定もお願いできますか？</p>
+                            </div>
                         </div>
                         <div class="qa-item__a">
                             <h4 class="qa-item__aHead">A.</h4>
                             <p class="qa-item__aText">もちろんです。不動産は物理的に分けにくい財産なので、現在価値を正確に把握することが肝要です。<br>弊職は、宅地建物取引士としても活動していますので、ご要望があれば、無料で不動産査定書をお作り致します。</p>
+                        </div>
+                    </div>
+                    <div class="qa-item">
+                        <div class="qa-item__q">
+                            <div class="qa-item__qContainer">
+                                <h4 class="qa-item__qHead">Q.</h4>
+                                <p class="qa-item__qText">不動産の相続登記ができていないが、相談や手続きは可能ですか？</p>
+                            </div>
+                        </div>
+                        <div class="qa-item__a">
+                            <h4 class="qa-item__aHead">A.</h4>
+                            <p class="qa-item__aText">まずは弊事務所にご相談下さい。遺言書や遺産分割協議書の有無等により手続きは異なります。弊事務所が個々の事案に応じた手続きをご案内いたしますので、安心してお任せください。</p>
+                        </div>
+                    </div>
+                    <div class="qa-item">
+                        <div class="qa-item__q">
+                            <div class="qa-item__qContainer">
+                                <h4 class="qa-item__qHead">Q.</h4>
+                                <p class="qa-item__qText">相続税がかかりそうな相続手続きでもお願いできますか？</p>
+                            </div>
+                        </div>
+                        <div class="qa-item__a">
+                            <h4 class="qa-item__aHead">A.</h4>
+                            <p class="qa-item__aText">まずは弊事務所にご相談下さい。相続財産調査の結果、相続税のご負担が予想される場合は、<br class="pc-only">提携税理士と二人三脚で、お客さまの税負担の最小化を見据えた相続手続きをご提案させて頂きます。</p>
                         </div>
                     </div>
                 </div>
@@ -461,8 +510,10 @@
                 <div class="qa-items">
                     <div class="qa-item">
                         <div class="qa-item__q">
-                            <h4 class="qa-item__qHead">Q.</h4>
-                            <p class="qa-item__qText">エンディングノートを作成しておけば、遺言書は不要ですか？</p>
+                            <div class="qa-item__qContainer">
+                                <h4 class="qa-item__qHead">Q.</h4>
+                                <p class="qa-item__qText">エンディングノートを作成しておけば、遺言書は不要ですか？</p>
+                            </div>
                         </div>
                         <div class="qa-item__a">
                             <h4 class="qa-item__aHead">A.</h4>
@@ -476,8 +527,10 @@
                     </div>
                     <div class="qa-item">
                         <div class="qa-item__q">
-                            <h4 class="qa-item__qHead">Q.</h4>
-                            <p class="qa-item__qText">遺言書を公正証書で作成するメリットは何ですか？</p>
+                            <div class="qa-item__qContainer">
+                                <h4 class="qa-item__qHead">Q.</h4>
+                                <p class="qa-item__qText">遺言書を公正証書で作成するメリットは何ですか？</p>
+                            </div>
                         </div>
                         <div class="qa-item__a">
                             <h4 class="qa-item__aHead">A.</h4>
@@ -486,8 +539,10 @@
                     </div>
                     <div class="qa-item">
                         <div class="qa-item__q">
-                            <h4 class="qa-item__qHead">Q.</h4>
-                            <p class="qa-item__qText">障害のある子供の面倒をみなけらばならないという遺言書は有効でしょうか？</p>
+                            <div class="qa-item__qContainer">
+                                <h4 class="qa-item__qHead">Q.</h4>
+                                <p class="qa-item__qText">障害のある子供の面倒をみなけらばならないという遺言書は有効でしょうか？</p>
+                            </div>
                         </div>
                         <div class="qa-item__a">
                             <h4 class="qa-item__aHead">A.</h4>
@@ -496,8 +551,10 @@
                     </div>
                     <div class="qa-item">
                         <div class="qa-item__q">
-                            <h4 class="qa-item__qHead">Q.</h4>
-                            <p class="qa-item__qText">妻が先に亡くなってしまう場合も想定した遺言書は作れますか？</p>
+                            <div class="qa-item__qContainer">
+                                <h4 class="qa-item__qHead">Q.</h4>
+                                <p class="qa-item__qText">妻が先に亡くなってしまう場合も想定した遺言書は作れますか？</p>
+                            </div>
                         </div>
                         <div class="qa-item__a">
                             <h4 class="qa-item__aHead">A.</h4>
@@ -513,8 +570,10 @@
                 <div class="qa-items">
                     <div class="qa-item">
                         <div class="qa-item__q">
-                            <h4 class="qa-item__qHead">Q.</h4>
-                            <p class="qa-item__qText">どれくらいの費用がかかるのか知りたいです。</p>
+                            <div class="qa-item__qContainer">
+                                <h4 class="qa-item__qHead">Q.</h4>
+                                <p class="qa-item__qText">どれくらいの費用がかかるのか知りたいです。</p>
+                            </div>
                         </div>
                         <div class="qa-item__a">
                             <h4 class="qa-item__aHead">A.</h4>
@@ -523,8 +582,10 @@
                     </div>
                     <div class="qa-item">
                         <div class="qa-item__q">
-                            <h4 class="qa-item__qHead">Q.</h4>
-                            <p class="qa-item__qText">平日は仕事が忙しいが、土日でも相談や面談は可能ですか？</p>
+                            <div class="qa-item__qContainer">
+                                <h4 class="qa-item__qHead">Q.</h4>
+                                <p class="qa-item__qText">平日は仕事が忙しいが、土日でも相談や面談は可能ですか？</p>
+                            </div>
                         </div>
                         <div class="qa-item__a">
                             <h4 class="qa-item__aHead">A.</h4>
@@ -545,87 +606,7 @@
         <div class="contact-noteArea">
             <p class="contact__note">は必須項目です</p>
         </div>
-        <!-- <form action="" class="contact-form">
-            <dl class="contact-form__dl">
-                <div class="contact-form__row">
-                    <dt class="contact-form__label"><label for="your-entity_type">法人/ 個人</label></dt>
-                    <div class="contact-form__radio">
-                        <dd class="contact-form__input contact-form__input--radio">
-                            <input id="corporate" name="entity_type" type="radio">
-                            <p class="contact-form__radioLabel">法人</p>
-                        </dd>
-                        <dd class="contact-form__input contact-form__input--radio">
-                            <input id="individual" name="entity_type" type="radio">
-                            <p class="contact-form__radioLabel">個人</p>
-                        </dd>
-                    </div>
-                </div>
-                <div class="contact-form__row">
-                    <dt class="contact-form__label"><label for="your-name">お名前<span class="require-label"></span></label></dt>
-                    <dd class="contact-form__input">
-                        <input id="your-name" type="text" placeholder="山田 太郎" required>
-                    </dd>
-                </div>
-                <div class="contact-form__row">
-                    <dt class="contact-form__label"><label for="your-furigana">フリガナ<span class="require-label"></span></label></dt>
-                    <dd class="contact-form__input">
-                        <input id="your-furigana" type="text" placeholder="ヤマダ タロウ" required>
-                    </dd>
-                </div>
-                <div class="contact-form__row">
-                    <dt class="contact-form__label"><label for="your-email">メールアドレス<span
-                                class="require-label"></span></label></dt>
-                    <dd class="contact-form__input"><input id="your-email" type="email"
-                            placeholder="xxx@example.com" required></dd>
-                </div>
-                <div class="contact-form__row">
-                    <dt class="contact-form__label"><label for="your-number">電話番号<span
-                                class="require-label"></span></label></dt>
-                    <dd class="contact-form__input"><input id="your-number" type="text"
-                            placeholder="000-0000-000" required></dd>
-                </div>
-                <div class="contact-form__row">
-                    <dt class="contact-form__label"><label for="your-zip">郵便番号<span class="require-label"></span></label></dt>
-                    <dd class="contact-form__input">
-                        <input id="your-zip" type="text" placeholder="山田 太郎" maxlength="7" required>
-                    </dd>
-                </div>
-                <div class="contact-form__row">
-                    <dt class="contact-form__label"><label for="your-address">ご住所<span class="require-label"></span></label></dt>
-                    <dd class="contact-form__input">
-                        <input id="address" type="text" placeholder="兵庫県姫路市安田三丁目９３番地アバエル１階" readonly>
-                    </dd>
-                </div>
-                <div class="contact-form__row">
-                    <dt class="contact-form__label"><label for="your-item">お問い合わせ項目</label></dt>
-                    <dd class="contact-form__input">
-                        <select class="contact-form__select" name="example" onchange="changeColor(this)">
-                            <option class="contact-form__option" value="" disabled selected hidden>選択してください</option>
-                            <option class="contact-form__option" value="相続">相続</option>
-                            <option class="contact-form__option" value="遺言">遺言</option>
-                            <option class="contact-form__option" value="終活">終活</option>
-                            <option class="contact-form__option" value="税金">税金</option>
-                            <option class="contact-form__option" value="お知らせ">お知らせ</option>
-                            <option class="contact-form__option" value="家族信託">家族信託</option>
-                            <option class="contact-form__option" value="その他">その他</option>
-                        </select>
-                    </dd>
-                </div>
-                <div class="contact-form__row">
-                    <dt class="contact-form__label"><label for="your-message">お問い合わせ内容<span
-                                class="require-label"></span></label></dt>
-                    <dd class="contact-form__input">
-                        <textarea name="your-message" id="your-message" placeholder="ご自由にご記入ください"></textarea>
-                    </dd>
-                </div> 
-            </dl>
-            <div class="contact-form__submit">
-                <input type="submit" value="送信する">
-            </div>
-        </form> -->
-        <form class="contact-form">
-            <?php echo do_shortcode('[contact-form-7 id="9" title="お問い合わせ"]'); ?>
-        </form>
+        <?php echo do_shortcode('[contact-form-7 id="9" title="お問い合わせ"]'); ?>
     </div>
 </section>
 <!-- /.contact -->
@@ -638,7 +619,15 @@
                 'post_type'      => 'post', // 投稿タイプ
                 'posts_per_page' => 5, // 5件取得
                 'orderby'        => 'date', // 日付順に並べる
-                'order'          => 'DESC' // 降順（新しい投稿から古い投稿）
+                'order'          => 'DESC', // 降順（新しい投稿から古い投稿）
+                'tax_query'      => array(
+                    array(
+                        'taxonomy' => 'category', // カテゴリータクソノミー
+                        'field'    => 'slug', // スラッグで指定
+                        'terms'    => 'voice', // 除外するカテゴリーのスラッグ
+                        'operator' => 'NOT IN', // 除外条件
+                    ),
+                ),
             );
             $the_query = new WP_Query($args);
         ?>

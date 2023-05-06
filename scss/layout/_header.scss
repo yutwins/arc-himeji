@@ -42,6 +42,10 @@
         align-items: center;
         justify-content: space-between;
         color: $pureWhite;
+
+        @media (max-width: 1220px) {
+            padding: 0 16px;
+        }
     }
 
     &-left {
@@ -50,15 +54,12 @@
     }
 
     &-logo {
-        display: flex;
-        align-items: center;
-        gap: 6px;
 
         &__icon {
             width: 230px;
             height: auto;
             
-            @include mq("sp") {
+            @media (max-width: 1220px) {
                 width: 210px;
             }
         }
@@ -69,6 +70,10 @@
         align-items: center;
         gap: 16px;
         margin-left: 60px;
+
+        @media (max-width: 1220px) {
+            margin-left: 40px;
+        }
 
         @media(max-width: 1080px) {
             display: none;   
@@ -104,6 +109,10 @@
                   transform: scale(1, 1);
                 }
             }
+
+            @media (max-width: 1220px) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -111,6 +120,10 @@
         display: flex;
         align-items: center;
         gap: 50px;
+
+        @media (max-width: 1220px) {
+            gap: 24px;
+        }
 
         @media(max-width: 1080px) {
             display: none;   
@@ -130,6 +143,10 @@
             width: 1px;
             height: 100%;
             background: $secondary-color;
+
+            @media (max-width: 1220px) {
+                right: -12px;
+            }
         }
     }
     

@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer id="footer" class="footer">
     <div class="inner footer-inner">
         <div class="footer-left">
             <a href="#" class="footer-logo">
