@@ -2356,19 +2356,6 @@ p {
           transform: translateY(-50%);
   background-color: #F30000;
 }
-.contact-form {
-  width: 100%;
-  max-width: 600px;
-  margin: 26px auto 0;
-  padding: 32px;
-  background-color: #FFFFFF;
-  border-radius: 16px;
-}
-@media (max-width: 767px) {
-  .contact-form {
-    padding: 32px 10px;
-  }
-}
 .contact-form__dl {
   width: 100%;
 }
@@ -2553,6 +2540,13 @@ p {
 .wpcf7-list-item-label {
   margin-left: 12px;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  .wpcf7-list-item-label {
+    font-size: 14px;
+    margin-left: 6px;
+    white-space: nowrap;
+  }
 }
 
 .contact-form__input > p {

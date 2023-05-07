@@ -44,16 +44,6 @@
     }
 
     &-form {
-        width: 100%;
-        max-width: 600px;
-        margin: 26px auto 0;
-        padding: 32px;
-        background-color: $pureWhite;
-        border-radius: 16px;
-
-        @include mq("sp") {
-            padding: 32px 10px;
-        }
         
         &__dl {
             width: 100%;
@@ -205,6 +195,12 @@
 .wpcf7-list-item-label {
     margin-left: 12px;
     font-weight: bold;
+
+    @include mq("sp") {
+        font-size: 14px;
+        margin-left: 6px;
+        white-space: nowrap;
+    }
 }
 
 .contact-form__input {
