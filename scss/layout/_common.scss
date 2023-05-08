@@ -1,6 +1,6 @@
 @use "../foundation/color" as *;
 
-$layout-width-inner: 1080px;
+$layout-width-inner: 1081px;
 
 // ブレイクポイント
 $breakpoints: (
@@ -18,10 +18,6 @@ $breakpoints: (
 .inner {
     width: min(100% - 2rem, 1100px);
     margin-inline: auto;
-    
-    // width: 1200px;
-    // max-width: 100%;
-    // margin: 0 auto;
 }
 
 .btn {
