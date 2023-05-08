@@ -56,12 +56,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // セレクトボックスのカラー変更
 function changeColor(hoge){
-  if( hoge.value == 0 ){
-      hoge.style.color = '';
+  if( hoge.value == "選択してください" ){
+      hoge.style.color = 'red';
   }else{
       hoge.style.color = 'black';
   }
 }
+const ddElement = document.getElementById("ddElement");
+const forthChild = ddElement.children[0].children[0].children[0].children[0];
+console.log(forthChild); // <select>要素を出力します
+
+
 
 //qaセクショントグル
 const qaWrap = document.querySelectorAll(".qa-wrap");

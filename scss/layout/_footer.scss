@@ -80,7 +80,7 @@
     &-place {
         margin-top: 12px;
         font-size: 14px;
-        font-weight: bold;
+        font-weight: 500;
         color: $pureBlack;
 
         @media (max-width: 900px) {
@@ -312,7 +312,6 @@
     display: none;
     width: 100%;
     height: 70px;
-    // background-color: #fff;
     backdrop-filter: blur(10px);
     position: fixed;
     bottom: 0;

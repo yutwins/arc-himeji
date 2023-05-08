@@ -221,15 +221,45 @@
 }
 
 
-
 /* Contact Form 7 セレクトボックスのデフォルトオプションの色を変更 */
 #your-select {
-  
-    option {
-        color: #FF0000 !important; /* ここに希望する色のコードを入れてください */
-
-        &:first-child  {
-            color: #FF0000 !important; /* ここに希望する色のコードを入れてください */
-        }
-    }
+    appearance: none;
+    color: $accent-color !important;
 }
+[data-name="your-select"] {
+    position: relative;
+    
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 6px 0 6px;
+        border-color: $accent-color transparent transparent transparent;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        pointer-events: none;
+        z-index: 5;
+    }
+    
+}
+.wpcf7-form-control {
+    appearance: none;
+    -webkit-appearance: none; /*Google Chrome/Safari対応*/
+    -moz-appearance: none; /*Firefox対応*/
+    -o-appearance: none; /*Opera対応*/
+    &.is-empty {
+       color: red;
+    }
+    option {
+       &:first-child {
+          color: red;
+       }
+       &:nth-child(n + 2) {
+          color: #000;
+       }
+    }
+ }

@@ -634,7 +634,7 @@ p {
 .footer-place {
   margin-top: 12px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   color: #000000;
 }
 @media (max-width: 900px) {
@@ -2148,29 +2148,6 @@ p {
   left: 0;
   z-index: -1;
 }
-.qa-wrapper::after {
-  content: "Q & A";
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 200px;
-  font-weight: 900;
-  color: #EBCB81;
-  color: #EEDCB3;
-  font-family: "Roboto", sans-serif;
-  white-space: nowrap;
-}
-@media (min-width: 768px) and (max-width: 1080px) {
-  .qa-wrapper::after {
-    font-size: 140px;
-  }
-}
-@media (max-width: 767px) {
-  .qa-wrapper::after {
-    font-size: 90px;
-  }
-}
 @media (max-width: 767px) {
   .qa-wrapper {
     padding: 24px 12px;
@@ -2294,6 +2271,7 @@ p {
 @media (max-width: 767px) {
   .qa-item__qContainer, .qa-item__a {
     gap: 12px;
+    padding: 8px;
   }
 }
 .qa-item__q {
@@ -2311,6 +2289,9 @@ p {
     place-items: center;
     padding: 0;
   }
+}
+.qa-item__a {
+  padding: 12px;
 }
 .qa-item__qHead, .qa-item__aHead {
   font-size: 24px;
@@ -2591,11 +2572,47 @@ p {
 }
 
 /* Contact Form 7 セレクトボックスのデフォルトオプションの色を変更 */
-#your-select option {
-  color: #FF0000 !important; /* ここに希望する色のコードを入れてください */
+#your-select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #650000 !important;
 }
-#your-select option:first-child {
-  color: #FF0000 !important; /* ここに希望する色のコードを入れてください */
+
+[data-name=your-select] {
+  position: relative;
+}
+[data-name=your-select]::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 6px 0 6px;
+  border-color: #650000 transparent transparent transparent;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.wpcf7-form-control {
+  appearance: none;
+  -webkit-appearance: none; /*Google Chrome/Safari対応*/
+  -moz-appearance: none; /*Firefox対応*/
+  -o-appearance: none; /*Opera対応*/
+}
+.wpcf7-form-control.is-empty {
+  color: red;
+}
+.wpcf7-form-control option:first-child {
+  color: red;
+}
+.wpcf7-form-control option:nth-child(n+2) {
+  color: #000;
 }
 
 #blog {
@@ -2807,6 +2824,9 @@ p {
     left: 10px;
   }
 }
+.single .taxonomy.category {
+  pointer-events: none;
+}
 .single-pageLink {
   width: 100%;
   display: -webkit-box;
@@ -2826,6 +2846,32 @@ p {
   .single-pageLink {
     font-size: 14px;
   }
+}
+.single .single-pageLink__prev,
+.single .single-pageLink__next {
+  position: relative;
+}
+.single .single-pageLink__prev::before,
+.single .single-pageLink__next::before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.single .single-pageLink__prev {
+  padding-left: 20px;
+}
+.single .single-pageLink__prev::before {
+  content: "<<";
+  left: -10px;
+}
+.single .single-pageLink__next {
+  padding-right: 20px;
+}
+.single .single-pageLink__next::before {
+  content: ">>";
+  right: -10px;
 }
 .single-content {
   max-width: 90%;

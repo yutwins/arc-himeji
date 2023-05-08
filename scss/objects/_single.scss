@@ -92,6 +92,9 @@
             left: 10px;
         }
     }
+    .taxonomy.category {
+        pointer-events: none;
+    }
 
     &-pageLink {
         width: 100%;
@@ -102,13 +105,32 @@
         @include mq("sp") {
             font-size: 14px;
         }
+    }
+    .single-pageLink__prev,
+    .single-pageLink__next {
+        position: relative;
 
-        &__prev {
-
+        &::before {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
-
-        &__next {
-
+    }
+    .single-pageLink__prev {
+        padding-left: 20px;
+        
+        &::before {
+            content: "<<";
+            left: -10px;
+        }
+    }
+    .single-pageLink__next {
+        padding-right: 20px;
+        
+        &::before {
+            content: ">>";
+            right: -10px;
         }
     }
 

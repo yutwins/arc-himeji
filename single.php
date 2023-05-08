@@ -13,10 +13,16 @@
                     <?php bcn_display(); // BreadcrumbNavXTのパンくずを表示するための記述 ?>
                 </div>
             <?php endif; ?>
-            <div class="single-pageLink">
+            <!-- <div class="single-pageLink">
                 <p class="single-pageLink__prev"><?php previous_post_link(); ?></p>
                 <p class="single-pageLink__next"><?php next_post_link(); ?></p>
+            </div> -->
+            <div class="single-pageLink">
+                <p class="single-pageLink__prev"><?php previous_post_link('%link', '%title', false, '10'); ?></p>
+                <p class="single-pageLink__next"><?php next_post_link('%link', '%title', false, '10'); ?></p>
             </div>
+
+
             <div class="single-content">
                 <?php 
                 // カテゴリー情報を取得

@@ -34,25 +34,25 @@
             left: 0;
             z-index: -1;
         }
-        &::after {
-            content: "Q & A";
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 200px;
-            font-weight: 900;
-            color: $medium-beige;
-            color: $pure-beige;
-            font-family: $ROBOTO;
-            white-space: nowrap;
+        // &::after {
+        //     content: "Q & A";
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+        //     font-size: 200px;
+        //     font-weight: 900;
+        //     color: $medium-beige;
+        //     color: $pure-beige;
+        //     font-family: $ROBOTO;
+        //     white-space: nowrap;
 
-            @include mq("tab") {
-                font-size: 140px;
-            }
-            @include mq("sp") {
-                font-size: 90px;
-            }
-        }
+        //     @include mq("tab") {
+        //         font-size: 140px;
+        //     }
+        //     @include mq("sp") {
+        //         font-size: 90px;
+        //     }
+        // }
 
 
         @include mq("sp") {
@@ -177,6 +177,7 @@
 
             @include mq("sp") {
                 gap: 12px;
+                padding: 8px;
             }
         }
         &__q {
@@ -193,6 +194,9 @@
                 place-items: center;
                 padding: 0;
             }
+        }
+        &__a { 
+            padding: 12px;
         }
         &__qHead,
         &__aHead {

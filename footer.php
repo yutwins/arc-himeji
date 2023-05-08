@@ -9,7 +9,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-tel-black.png" alt="電話アイコン" class="footer-tel__icon">
                 <a href="tel:090-4288-9385" class="footer-tel__num">090-4288-9385</a>
             </div>
-            <h4 class="footer-place">姫路市安田三丁目93番地アバエル1F</h4>
+            <h4 class="footer-place">姫路市安田三丁目９３番地 アバエル1F</h4>
             <p class="footer-place__note">※事務所近くに駐車場（２台）をご用意しております。</p>
             <a href="#" class="footer__link">事務所詳細はGoogle プロフィールへ</a>
             <div class="footer-accesses">
@@ -23,18 +23,17 @@
                     <ul class="footer-access__ul">
                         <li class="footer-access__li">JR姫路駅下車、南出口から南へ徒歩15分</li>
                         <li class="footer-access__li">山陽電車手柄駅下車 東へ徒歩3分</li>
-                        <li class="footer-access__li">姫路駅（南口）南21乗り場より3分<br>安田バス停下車 西へ徒歩1分</li>
                     </ul>
                 </div>
                 <div class="footer-access">
                     <div class="footer-access__tag">
-                        <p class="footer-access__tagText">お車をご利用の場合</p>
+                        <p class="footer-access__tagText">路線バスご利用の場合</p>
                     </div>
                     <figure class="footer-access__iconArea">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-car.png" alt="車アイコン" class="footer-access__icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-bus-brown.png" alt="バスアイコン" class="footer-access__icon">
                     </figure>
                     <ul class="footer-access__ul">
-                        <li class="footer-access__li">姫路バイパス姫路南IC下車　北方向へ約3分</li>
+                        <li class="footer-access__li">姫路駅（南口）南21乗り場より3分<br>安田バス停下車 西へ徒歩1分</li>
                     </ul>
                 </div>
             </div>
