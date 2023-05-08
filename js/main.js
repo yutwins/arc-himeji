@@ -53,34 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// jQuery(document).ready(function() {
-//   jQuery("#zip").on("input", function() {
-//     const zip = jQuery(this).val();
-//     if (zip.length === 7) {
-//       jQuery.ajax({
-//         url: "https://zipcloud.ibsnet.co.jp/api/search",
-//         dataType: "jsonp",
-//         data: {
-//           zipcode: zip
-//         },
-//         success: function(data) {
-//           if (data.status === 200) {
-//             const address = data.results[0].address1 + data.results[0].address2 + data.results[0].address3;
-//             jQuery("#address").val(address);
-//           } else {
-//             jQuery("#address").val("住所が見つかりませんでした");
-//           }
-//         },
-//         error: function() {
-//           jQuery("#address").val("住所の取得に失敗しました");
-//         }
-//       });
-//     } else {
-//       jQuery("#address").val("");
-//     }
-//   });
-// });
-
 
 // セレクトボックスのカラー変更
 function changeColor(hoge){
@@ -92,6 +64,7 @@ function changeColor(hoge){
 }
 
 //qaセクショントグル
+const qaWrap = document.querySelectorAll(".qa-wrap");
 const qaItem = document.querySelectorAll(".qa-item");
 const qaQ = document.querySelectorAll(".qa-item__q")
 const qaA = document.querySelectorAll(".qa-item__a")
@@ -99,6 +72,7 @@ const qaTitle = document.querySelectorAll(".qa-wrap__title")
 const qaItems = document.querySelectorAll(".qa-items")
 
 // Add 'open' class to the first qa-item
+qaWrap[0].classList.add('open');
 qaTitle[0].classList.add('open');
 qaItems[0].classList.add('open');
 qaItem[0].classList.add('open');
@@ -108,6 +82,7 @@ const qaTitleClick = function() {
     qaTitle[i].addEventListener('click', function() {
       this.classList.toggle('open');
       this.nextElementSibling.classList.toggle('open');
+      this.parentElement.classList.toggle('open');
       
       return false;
     });
