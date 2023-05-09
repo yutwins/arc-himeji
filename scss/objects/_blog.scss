@@ -68,6 +68,11 @@
         }
         &__itemDate {
             font-weight: bold;
+
+            @include mq("tab") {
+                font-size: 15px;
+            }
+
         }
         &__itemCategory {
             min-width: 96px;
@@ -78,6 +83,9 @@
             background-color: $pureWhite;
             border-radius: 30px;
 
+            @include mq("tab") {
+                min-width: 80px;
+            }
             @include mq("sp") {
                 min-width: 80px;
                 padding: 2px;
@@ -87,14 +95,17 @@
             font-weight: bold;
             font-size: 14px;
 
-            @include mq("sp") {
+            @media (max-width: 900px) {
                 font-size: 12px;
             }
         }
 
         &__itemTitle {
-            width: 75%;
+            width: 72%;
 
+            @include mq("tab") {
+                width: 70%;
+            }
             @include mq("sp") {
                 width: 100%;
                 margin-top: 12px;

@@ -16,15 +16,23 @@
         left: 0;
         background: url(../images/arc-hero-img.png) no-repeat center center / cover;
     }
-    
+
     @include mq("sp") {
         padding-top: 70px;
         min-height: 480px;
         height: auto;
         
         &::before {
-            top: 70px;
+            top: 50px;
             background: url(../images/arc-hero-img-sp.png) no-repeat center center / cover;
+        }
+    }
+    @media screen and (max-width: 760px) and (min-width: 480px) {
+        padding-top: 0;
+
+        &::before {
+            top: 0;
+            background: url(../images/arc-hero-img-tab.png) no-repeat center center / cover;
         }
     }
 
@@ -47,6 +55,9 @@
         font-weight: 900;
         color: $accent-color;
 
+        @include mq("tab") {
+            font-size: 36px;
+        }
         @include mq("sp") {
             font-size: 22px;
             text-align: center;
@@ -59,6 +70,10 @@
         line-height: 2em;
         font-weight: bold;
 
+        @include mq("tab") {
+            margin-top: 56px;
+            font-size: 19px;
+        }
         @include mq("sp") {
             margin-top: 28px;
             font-size: 16px;

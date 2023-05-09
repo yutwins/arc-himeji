@@ -33,6 +33,7 @@
 
         @include mq("tab") {
             width: 47%;
+            min-height: 420px;
         }
 
         @include mq("sp") {

@@ -23,6 +23,10 @@ class MobileMenu {
 }
 new MobileMenu();
 
+function openLineInBrowser() {
+  window.open('https://lin.ee/gDSsRGq', '_blank');
+}
+
 
 
 

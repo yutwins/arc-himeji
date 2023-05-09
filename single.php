@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="single">
+<section class="page-single">
     <div class="single-hero">
         <div class="single-hero__titleArea">
             <h1 class="single-hero__title">ブログ</h1>
@@ -13,10 +13,7 @@
                     <?php bcn_display(); // BreadcrumbNavXTのパンくずを表示するための記述 ?>
                 </div>
             <?php endif; ?>
-            <!-- <div class="single-pageLink">
-                <p class="single-pageLink__prev"><?php previous_post_link(); ?></p>
-                <p class="single-pageLink__next"><?php next_post_link(); ?></p>
-            </div> -->
+            <!-- "お客様の声"カテゴリは除く -->
             <div class="single-pageLink">
                 <p class="single-pageLink__prev"><?php previous_post_link('%link', '%title', false, '10'); ?></p>
                 <p class="single-pageLink__next"><?php next_post_link('%link', '%title', false, '10'); ?></p>

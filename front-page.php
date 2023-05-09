@@ -59,7 +59,7 @@
                             </li>
                             <li class="worried-upperItem__textList">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/arc-cloud-icon.png" alt="モヤモヤアイコン" class="worried-upperItem__textIcon">
-                                <p class="worried-upperItem__text">遺産分けがスムーズに進むのかとても心配</p>
+                                <p class="worried-upperItem__text">相続がスムーズに進むのかとても心配</p>
                             </li>
                         </ul>
                     </div>
@@ -67,7 +67,7 @@
                 <div class="worried-upperItem">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/arc-worried-icon01.png" alt="想いアイコン" class="worried-upperItem__icon">
                     <div class="worried-upperItem__headArea">
-                        <h3 class="worried-upperItem__head">大切な家族のために、<br class="sp-only">あなたのこんな想い、<br><span class="yuigon-furigana">遺言書</span>にしてみませんか？</h3>
+                        <h3 class="worried-upperItem__head">大切な家族のためにあなたの<br>こんな想い、<span class="yuigon-furigana">遺言書</span>にしてみませんか？</h3>
                     </div>
                     <div class="worried-upperItem__textArea">
                         <ul class="worried-upperItem__textUl">
@@ -115,8 +115,8 @@
                     <p class="feature-list__tagText">01</p>
                 </div>
                 <div class="feature-list__container">
-                    <h3 class="feature-list__head">初回相談は無料</h3>
-                    <p class="feature-list__text">弊事務所では、サービスご利用前でも、電話、メール、Web面談による初回のご相談は無料です。</p>
+                    <h3 class="feature-list__head">相談は無料</h3>
+                    <p class="feature-list__text">サービスご利用前でも、電話、メール、Web面談によるご相談は無料です。</p>
                 </div>
             </li>
             <li class="feature-list">
@@ -444,7 +444,7 @@
                         <div class="qa-item__q">
                             <div class="qa-item__qContainer">
                                 <h4 class="qa-item__qHead">Q.</h4>
-                                <p class="qa-item__qText">突然のことで何から手を付けていいのかわからないです。</p>
+                                <p class="qa-item__qText">突然のことで何から手を付けていいのかわからないのですが...。</p>
                             </div>
                         </div>
                         <div class="qa-item__a">
@@ -545,7 +545,7 @@
                         </div>
                         <div class="qa-item__a">
                             <h4 class="qa-item__aHead">A.</h4>
-                            <p class="qa-item__aText">子供の面倒を誰がみるかという点は、法律で定められた遺言事項ではないので、法的な効力はありません。ただし、遺言書には、付言事項という法律行為以外のことで家族に伝えたい大切なメッセージを残すことは可能です。また、どうしても法的な効力を持たせたい場合は、負担付遺贈の形にするなどの工夫の余地はあります。</p>
+                            <p class="qa-item__aText">子供の面倒を誰がみるかという点は、法律で定められた遺言事項ではないので、法的な効力はありません。ただし、遺言書には、付言事項として、また、どうしても法律行為以外のことで家族に伝えたい大切なメッセージを残すことは可能です。また、どうしても法的な効力を持たせたい場合は、負担付遺贈の形にするなどの方法があります。</p>
                         </div>
                     </div>
                     <div class="qa-item">

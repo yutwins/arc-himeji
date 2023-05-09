@@ -146,7 +146,7 @@
         overflow: hidden;
         transition: all 0.3s ease 0s;
 
-        @include mq("sp") {
+        @media (max-width: 800px) {
             max-height: 80px;
         }
 
@@ -188,11 +188,13 @@
             cursor: pointer;
             background-color: $medium-beige;
 
-            @include mq("sp") {
-                height: 80px;
-                display: grid;
-                place-items: center;
-                padding: 0;
+            @media (max-width: 800px) {
+                height: 70px;
+                display: flex;
+                align-items: center;
+            }
+            @media (max-width: 450px) {
+                height: 60px;
             }
         }
         &__a { 

@@ -2,9 +2,6 @@
 
 .worried {
 
-    &-inner {
-
-    }
 
     &__title {
         color: $accent-color;
@@ -34,6 +31,9 @@
             background: url(../../images/arc-dotted-line.png) no-repeat center center / cover;
         }
 
+        @include mq("tab") {
+            align-items: flex-start;
+        }
         @include mq("sp") {
             display: block;
             max-width: 350px;
@@ -48,6 +48,9 @@
     &-upperItem {
         width: 48%;
 
+        @include mq("tab") {
+            width: 49%;
+        }
         @include mq("sp") {
             width: 100%;
         }

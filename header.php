@@ -94,7 +94,7 @@
                     </a>
                 </li>
                 <li class="mobile-menu__item mobile-menu__item--contact">
-                    <a href="https://lin.ee/gDSsRGq" class="mobile-menu__link">
+                    <a href="javascript:void(0);" class="mobile-menu__link" onclick="openLineInBrowser();">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-line.png" alt="LINEアイコン" class="mobile-menu__subIcon">
                         <span class="mobile-menu__subText">LINEを送る</span>
                     </a>

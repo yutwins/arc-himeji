@@ -25,7 +25,7 @@
     display: block;
 
     /* 横向きのスマホデバイスの場合に適用されるスタイル */
-    @media screen and (max-width: 767px) and (orientation: landscape) {
+    @media screen and (max-width: 760px) and (orientation: landscape) {
         display: none;
     }
   
