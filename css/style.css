@@ -2785,7 +2785,7 @@ p {
 .wpcf7 form.sent .wpcf7-response-output {
   border-color: #FFF0CD;
 }
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
   .wpcf7 form.sent .wpcf7-response-output {
     font-size: 14px;
     font-weight: 500;

@@ -114,13 +114,10 @@ qaQClick();
 document.addEventListener("DOMContentLoaded", function () {
   let consentCheckbox = document.querySelector("input[name='acceptance-825']");
   let consentLabel = document.querySelector(".wpcf7-list-item-label");
-  console.log(consentCheckbox);
   consentCheckbox.disabled = true;
 
   let scrollableText = document.querySelector(".pp-textArea");
   let textarea = scrollableText.querySelector("textarea");
-  console.log(scrollableText);
-  console.log(textarea);
 
   function checkScrollComplete() {
     let scrollHeight = textarea.scrollHeight;
