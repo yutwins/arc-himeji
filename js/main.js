@@ -68,7 +68,6 @@ function changeColor(hoge){
 }
 const ddElement = document.getElementById("ddElement");
 const forthChild = ddElement.children[0].children[0].children[0].children[0];
-console.log(forthChild); // <select>要素を出力します
 
 
 
@@ -109,3 +108,32 @@ const qaQClick = function() {
 
 qaTitleClick();
 qaQClick();
+
+
+// プライバシーポリシー
+document.addEventListener("DOMContentLoaded", function () {
+  let consentCheckbox = document.querySelector("input[name='acceptance-825']");
+  console.log(consentCheckbox);
+  consentCheckbox.disabled = true;
+  
+  let scrollableText = document.querySelector(".pp-textArea");
+  let textarea = scrollableText.querySelector("textarea");
+  console.log(scrollableText);
+  console.log(textarea);
+
+  function checkScrollComplete() {
+    let scrollHeight = textarea.scrollHeight;
+    let scrollTop = textarea.scrollTop;
+    let clientHeight = textarea.clientHeight;
+
+    return scrollTop + clientHeight >= scrollHeight;
+  }
+
+  textarea.addEventListener("scroll", function () {
+    if (!consentCheckbox.disabled) return;
+
+    if (checkScrollComplete()) {
+      consentCheckbox.disabled = false;
+    }
+  });
+});

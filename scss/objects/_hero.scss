@@ -39,6 +39,9 @@
     &-inner {
         padding: 0 7%;
 
+        @include mq("tab") {
+            padding: 0 5%;
+        }
         @include mq("sp") {
             padding: 220px 5% 0 5%;
         }

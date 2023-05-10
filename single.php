@@ -15,8 +15,46 @@
             <?php endif; ?>
             <!-- "お客様の声"カテゴリは除く -->
             <div class="single-pageLink">
-                <p class="single-pageLink__prev"><?php previous_post_link('%link', '%title', false, '10'); ?></p>
-                <p class="single-pageLink__next"><?php next_post_link('%link', '%title', false, '10'); ?></p>
+                <!-- <p class="single-pageLink__prev">
+                    <?php 
+                        $prev_post = get_previous_post(false, '10');
+                        if (!empty($prev_post)) {
+                        previous_post_link('%link', '%title', false, '10');
+                        }
+                    ?>
+                </p>
+                <p class="single-pageLink__next">
+                    <?php 
+                        $next_post = get_next_post(false, '10');
+                        if (!empty($next_post)) {
+                            next_post_link('%link', '%title', false, '10');
+                        } else {
+
+                        }
+                    ?>
+                </p> -->
+                <div class="single-pageLink">
+                    <?php
+                      $prev_post = get_previous_post(false, '10');
+                      if (!empty($prev_post)) {
+                    ?>
+                      <p class="single-pageLink__prev">
+                        <?php previous_post_link('%link', '%title', false, '10'); ?>
+                      </p>
+                    <?php
+                      }
+                    ?>
+                    <?php
+                      $next_post = get_next_post(false, '10');
+                      if (!empty($next_post)) {
+                    ?>
+                      <p class="single-pageLink__next">
+                        <?php next_post_link('%link', '%title', false, '10'); ?>
+                      </p>
+                    <?php
+                      }
+                    ?>
+                </div>
             </div>
 
 

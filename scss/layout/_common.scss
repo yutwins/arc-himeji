@@ -54,6 +54,17 @@ $breakpoints: (
         display: none;
     }
 }
+.tab-only {
+    display: none;
+
+    @media (max-width: 900px) and (min-width: 768px) {
+        display: block;
+    }
+
+    @include mq("sp") {
+        display: none;
+    }
+}
 .sp-only {
     display: none;
     

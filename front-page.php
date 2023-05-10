@@ -28,7 +28,7 @@
             <h3 class="profile__subtitle">相続と不動産のプロが導く、<br class="sp-only">安心・確実な相続・遺言サポート</h3>
             <div class="profile-textArea">
                 <p class="profile__text">　アーク行政書士事務所は、兵庫県姫路市で、行政書士・宅地建物取引士が、相続、不動産に関するご相談を取り扱っている事務所です。</p>
-                <p class="profile__text">　皆さまの幸せな未来へ繋がる「架け橋」となり、相続を円滑に進めるための財産管理や資産承継を全力でサポートいたします。
+                <p class="profile__text">　皆さまの幸せな未来へ繋がる「懸け橋」となり、相続を円滑に進めるための財産管理や資産承継を全力でサポートいたします。
                 また、不動産の売却、査定、活用などのお悩みも承っております。</p>
                 <p class="profile__text">　是非、お気軽にご相談ください。</p>
             </div>
@@ -233,7 +233,7 @@
                 </div>
                 <div class="flow-list__textArea">
                     <h4 class="flow-list__title">業務着手</h4>
-                    <p class="flow-list__text">着手金入金完了次第、手続きを進めます。<br>また、進捗状況を定期的にご報告いたします。</p>
+                    <p class="flow-list__text nowrap">着手金入金完了次第、手続きを進めます。<br>また、進捗状況を定期的にご報告いたします。</p>
                 </div>
             </li>
         </ol>
@@ -407,8 +407,18 @@
         ?>
             <li class="voice-list">
                 <div class="voice-list__head">
-                    <div class="voice-list__headLeft">
-                        <img src="<?php echo CFS()->get('userImg');?>" alt="お客様画像" class="voice-list__headImg">
+                <div class="voice-list__headLeft">
+                      <?php
+                        $userImg = CFS()->get('userImg');
+                        if(empty($userImg)){
+                          // ここでデフォルト画像のファイル名を指定してください。
+                            $defaultImageFileName = 'arc-voice-img.png';
+                            // 画像ファイルがあるディレクトリのURLを指定してください。
+                            $imagesDirectoryURL = get_template_directory_uri() . '/images/';
+                            $userImg = $imagesDirectoryURL . $defaultImageFileName;
+                        }
+                      ?>
+                      <img src="<?php echo $userImg;?>" alt="お客様画像" class="voice-list__headImg">
                     </div>
                     <div class="voice-list__headRight">
                         <p class="voice-list__headName"><?php echo CFS()->get('name');?></p>
@@ -545,7 +555,7 @@
                         </div>
                         <div class="qa-item__a">
                             <h4 class="qa-item__aHead">A.</h4>
-                            <p class="qa-item__aText">子供の面倒を誰がみるかという点は、法律で定められた遺言事項ではないので、法的な効力はありません。ただし、遺言書には、付言事項として、また、どうしても法律行為以外のことで家族に伝えたい大切なメッセージを残すことは可能です。また、どうしても法的な効力を持たせたい場合は、負担付遺贈の形にするなどの方法があります。</p>
+                            <p class="qa-item__aText">子供の面倒を誰がみるかという点は、法律で定められた遺言事項ではないので、法的な効力はありません。ただし、遺言書には、付言事項として、法律以外のことで、どうしても家族に伝えたい大切なメッセージを残すことは可能です。また、どうしても法的な効力を持たせたい場合は、負担付遺贈の形にするなどの方法があります。</p>
                         </div>
                     </div>
                     <div class="qa-item">

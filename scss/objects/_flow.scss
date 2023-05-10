@@ -35,6 +35,9 @@
         background-color: $pureWhite;
         position: relative;
 
+        @include mq("tab") {
+            padding: 20px 14px;
+        }
         @include mq("sp") {
             width: 100%;
             min-height: initial;
@@ -66,8 +69,6 @@
                     transform: translate(50%, 0) rotate(90deg);   
                 }
             }
-
-
         }
 
         &__upper {
@@ -156,12 +157,13 @@
             font-weight: 500;
 
             @include mq("tab") {
-                font-size: 14px;
+                font-size: 13px;
             }
             @include mq("sp") {
                 margin-top: 6px;
                 font-size: 12px;
             }
+
         }
     }
 
