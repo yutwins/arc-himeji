@@ -2785,6 +2785,12 @@ p {
 .wpcf7 form.sent .wpcf7-response-output {
   border-color: #FFF0CD;
 }
+@media (max-width: 800px) {
+  .wpcf7 form.sent .wpcf7-response-output {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
 
 /* Contact Form 7 セレクトボックスのデフォルトオプションの色を変更 */
 #your-select {
