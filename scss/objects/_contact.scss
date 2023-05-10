@@ -142,6 +142,11 @@
             color: $gray-placeHolder;
         }
 
+        &__ppNote {
+            font-size: 12px;
+            font-weight: normal;
+        }
+
         &__submit {
             width: 200px;
             height: 54px;
@@ -214,7 +219,13 @@
     .wpcf7-list-item-label {
         font-weight: 500;
         font-size: 15px;
+        opacity: .5;
+        transition: opacity 0.3s ease 0s;
     }
+    .wpcf7-list-item-label.enabled {
+        opacity: 1;
+        cursor: pointer;
+      }
 }
 .wpcf7-form {
     width: 100%;

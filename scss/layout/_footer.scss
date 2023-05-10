@@ -327,6 +327,10 @@
                 transform: translateY(-50%);
                 background-color: $pureBlack;
             }
+
+            @include mq("sp") {
+                white-space: nowrap;
+            }
         }
     }
 

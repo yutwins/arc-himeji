@@ -51,6 +51,10 @@
         position: relative;
         z-index: 2;
         padding-top: 80px;
+
+        @include mq("sp") {
+            padding-top: 40px;
+        }
     }
 
     &__title {

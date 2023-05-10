@@ -581,6 +581,18 @@
                         <div class="qa-item__q">
                             <div class="qa-item__qContainer">
                                 <h4 class="qa-item__qHead">Q.</h4>
+                                <p class="qa-item__qText">相続手続きの一部だけをお願いすることはできますか？</p>
+                            </div>
+                        </div>
+                        <div class="qa-item__a">
+                            <h4 class="qa-item__aHead">A.</h4>
+                            <p class="qa-item__aText">もちろん、可能です。お客さまのニーズに合わせて、相続人調査だけ、遺産分割協議書作成だけなど、臨機応変に対応させて頂きますので、是非お声掛け下さい。</p>
+                        </div>
+                    </div>
+                    <div class="qa-item">
+                        <div class="qa-item__q">
+                            <div class="qa-item__qContainer">
+                                <h4 class="qa-item__qHead">Q.</h4>
                                 <p class="qa-item__qText">どれくらいの費用がかかるのか知りたいです。</p>
                             </div>
                         </div>
