@@ -55,7 +55,7 @@
     <div class="cta-inner">
         <ul class="cta-ul">
             <li class="cta-li">
-                <a href="tel:090-4288-9385" class="cta-item">
+                <a href="tel:09042889385" class="cta-item">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/arc-icon-telephone.png" alt="電話アイコン" class="cta-item__icon">
                     <p class="cta-item__text">電話をかける</p>
                 </a>

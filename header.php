@@ -14,11 +14,11 @@
 
     <!-- ②SEO対策の補助的措置 -->
     <!-- サイトのタイトル -->
-    <title>アーク行政書士</title>
+    <title>アーク行政書士- 姫路の相続・遺言書サポート窓口</title>
     <!-- キーワード -->
-    <meta name="keywords" content="">
+    <meta name="keywords" content="アーク行政書士,相続,遺言,姫路">
     <!-- サイトの説明 -->
-    <meta name="description" content="">
+    <meta name="description" content="兵庫県姫路市を拠点に、相続や遺言に関する専門的なサポートを提供する当社のホームページへようこそ。相続税対策、遺言書の作成、遺産分割協議など、お客様のニーズに応じたサービスをご提供いたします。地域密着型で信頼性と安心感をお約束します。">
     <!-- 重複するURLを一本化 -->
     <link rel="canonical" href="">
 

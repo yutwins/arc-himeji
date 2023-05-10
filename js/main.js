@@ -83,7 +83,7 @@ const qaItems = document.querySelectorAll(".qa-items")
 qaWrap[0].classList.add('open');
 qaTitle[0].classList.add('open');
 qaItems[0].classList.add('open');
-qaItem[0].classList.add('open');
+// qaItem[0].classList.add('open');
 
 const qaTitleClick = function() {
   for(let i = 0; i < qaTitle.length; i++) {
