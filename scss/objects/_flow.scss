@@ -35,6 +35,14 @@
         background-color: $pureWhite;
         position: relative;
 
+        &:nth-child(5) {
+            width: 30%;
+
+            @include mq("sp") {
+                width: 100%;
+            }
+        }
+
         @include mq("tab") {
             padding: 20px 14px;
         }
@@ -153,7 +161,7 @@
         }
         &__text {
             margin-top: 12px;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 500;
 
             @include mq("tab") {

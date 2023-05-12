@@ -267,7 +267,7 @@
                     <div class="service-item">
                         <div class="service-item__titleArea">
                             <h3 class="service-item__title">法定相続情報一覧図</h3>
-                            <p class="service-item__desc">相続人の関係性を明確に示す図。<br>遺産分割を正確かつ迅速に行うための重要な情報を視覚化して提供します。</p>
+                            <p class="service-item__desc">相続人の関係性を明確に示す図。<br>遺産分割を正確かつ迅速に行うための重要な<br class="sp-only">情報を視覚化して提供します。</p>
                         </div>
                         <div class="service-item__priceArea">
                             <div class="service-item__priceAreaInner">

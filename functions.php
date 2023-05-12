@@ -68,6 +68,7 @@ function my_script_init()
       ) );
   }
   add_action( 'widgets_init', 'custom_widgets_init' );
+
   
 
     // 各テンプレートごとにメイン画像を表示
